@@ -1,0 +1,569 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY vsto "http://vsto.org/schema#">
+  <!ENTITY mlso "http://vsto.org/mlso#">
+  <!ENTITY mlsoi "http://vsto.org/mlso/individuals/">
+]>
+<rdf:RDF
+    xmlns="&mlsoi;"
+    xmlns:mlso="&mlso;"
+    xmlns:mlsoi="&mlsoi;"
+    xmlns:vsto="&vsto;"
+    xmlns="http://escience.rpi.edu/ontology/vsto/2/0/mlso.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:vsto="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xml:base="&mlsoi;">
+
+  <vsto:BestDataImage rdf:ID="mlso_data_image_mk_rpb_best">
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_processing_cal">
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >cal</vsto:hasAttValue>
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttName>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_quality_A">
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >quality</vsto:hasAttName>
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A</vsto:hasAttValue>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_wave_length_rpb">
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttName>
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >rpb</vsto:hasAttValue>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <dc:title
+    >Best MK Rectangular pB Image</dc:title>
+    <dc:description
+    >Best MK Rectangular pB Image</dc:description>
+  </vsto:BestDataImage>
+  <vsto:AnyDataImage rdf:ID="mlso_data_image_mk_rpb_vig_all">
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_rpb"/>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_processing_vig">
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttName>
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >vig</vsto:hasAttValue>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_processing_vav">
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >vav</vsto:hasAttValue>
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttName>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <dc:title
+    >All MK Rectangular pB Vignetted Images</dc:title>
+    <dc:description
+    >All MK Rectangular pB Vignetted Images</dc:description>
+  </vsto:AnyDataImage>
+  <vsto:AnyDataImage rdf:ID="mlso_data_image_pics_limb_all">
+    <dc:description
+    >All PICS Limb Images</dc:description>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_processing_raw">
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttName>
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >raw</vsto:hasAttValue>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_wave_length_alr">
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >alr</vsto:hasAttValue>
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttName>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <dc:title
+    >All PICS Limb Images</dc:title>
+  </vsto:AnyDataImage>
+  <vsto:AnyDataImage rdf:ID="mlso_data_image_pics_asc_all">
+    <dc:description
+    >All PICS Corrected Images</dc:description>
+    <dc:title
+    >All PICS Corrected Images</dc:title>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_wave_length_asc">
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >asc</vsto:hasAttValue>
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttName>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+  </vsto:AnyDataImage>
+  <vsto:Attribute rdf:ID="mlso_attribute_quality_U">
+    <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >quality</vsto:hasAttName>
+    <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >U</vsto:hasAttValue>
+  </vsto:Attribute>
+  <vsto:BestDataImage rdf:ID="mlso_data_image_chip_vel_best">
+    <dc:description
+    >Best CHIP Velocity Image</dc:description>
+    <dc:title
+    >Best CHIP Velocity Image</dc:title>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_wave_length_bsh">
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >bsh</vsto:hasAttValue>
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttName>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
+  </vsto:BestDataImage>
+  <vsto:AverageDataImage rdf:ID="mlso_data_image_mk_cpb_avg">
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_quality_G">
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >G</vsto:hasAttValue>
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >quality</vsto:hasAttName>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_processing_avg">
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >avg</vsto:hasAttValue>
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttName>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_wave_length_cpb">
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >cpb</vsto:hasAttValue>
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttName>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <dc:description
+    >Average MK Polar pB Image</dc:description>
+    <dc:title
+    >Average MK polar pB Image</dc:title>
+  </vsto:AverageDataImage>
+  <vsto:BestDataImage rdf:ID="mlso_data_image_mk_cpb_best">
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_cpb"/>
+    <dc:title
+    >Best MK Polar pB Image</dc:title>
+    <dc:description
+    >Best MK Polar pB Image</dc:description>
+  </vsto:BestDataImage>
+  <vsto:BestDataImage rdf:ID="mlso_data_image_pics_asc_best">
+    <dc:title
+    >Best PICS Corrected Image</dc:title>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_asc"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
+    <dc:description
+    >Best PICS Corrected Image</dc:description>
+  </vsto:BestDataImage>
+  <vsto:BestDataImage rdf:ID="mlso_data_image_pics_disk_best">
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_wave_length_asl">
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttName>
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >asl</vsto:hasAttValue>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_processing_ldc">
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttName>
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >ldc</vsto:hasAttValue>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <dc:description
+    >Best PICS Disk Image</dc:description>
+    <dc:title
+    >Best PICS Disk Image</dc:title>
+  </vsto:BestDataImage>
+  <vsto:AverageDataImage rdf:ID="mlso_data_image_mk_rpb_avg">
+    <dc:description
+    >Average MK Rectangular pB Image</dc:description>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_avg"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_G"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_rpb"/>
+    <dc:title
+    >Average MK Rectangular pB Image</dc:title>
+  </vsto:AverageDataImage>
+  <vsto:AnyDataImage rdf:ID="mlso_data_image_mk_rpb_all">
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_rpb"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_avg"/>
+    <dc:title
+    >All MK Rectangular pB Images</dc:title>
+    <dc:description
+    >All MK Rectangular pB Images</dc:description>
+  </vsto:AnyDataImage>
+  <vsto:HtmlDataFile rdf:ID="mlso_html_datafile">
+    <dc:title
+    >HTML</dc:title>
+    <dc:description
+    >HTML form for OPeNDAP based data access</dc:description>
+  </vsto:HtmlDataFile>
+  <vsto:BestDataImage rdf:ID="mlso_data_image_pics_limb_best">
+    <dc:description
+    >Best PICS Limb Image</dc:description>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_raw"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_alr"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
+    <dc:title
+    >Best PICS Limb Image</dc:title>
+  </vsto:BestDataImage>
+  <vsto:AnyDataImage rdf:ID="mlso_data_image_chip_vel_all">
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_bsh"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
+    <dc:title
+    >All CHIP Velocity Images</dc:title>
+    <dc:description
+    >All CHIP Velocity Images</dc:description>
+  </vsto:AnyDataImage>
+  <vsto:AsciiDataFile rdf:ID="mlso_ascii_datafile">
+    <dc:title
+    >ASC</dc:title>
+    <dc:description
+    >ASCII Data File</dc:description>
+  </vsto:AsciiDataFile>
+  <vsto:BestDataImage rdf:ID="mlso_data_image_chip_int_best">
+    <dc:title
+    >Best CHIP Intensity Image</dc:title>
+    <dc:description
+    >Best CHIP Intensity Image</dc:description>
+    <vsto:hasAttributes>
+      <vsto:Attribute rdf:ID="mlso_attribute_wave_length_hsh">
+        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >hsh</vsto:hasAttValue>
+        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttName>
+      </vsto:Attribute>
+    </vsto:hasAttributes>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
+  </vsto:BestDataImage>
+  <vsto:Attribute rdf:ID="mlso_attribute_quality_B">
+    <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >quality</vsto:hasAttName>
+    <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >B</vsto:hasAttValue>
+  </vsto:Attribute>
+  <vsto:OpendapDataFile rdf:ID="mlso_opendap_datafile">
+    <dc:description
+    >OPeNDAP data file</dc:description>
+    <dc:title
+    >OPeNDAP</dc:title>
+  </vsto:OpendapDataFile>
+  <vsto:Observatory rdf:ID="mlso_observatory">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The Mauna Loas Solar Observatory (MLSO), operated by the High Altitude Observatory in Boulder Colorado, houses several instruments designed to observe the sun at several wavelengths. The MLSO instrument provide observations needed to understand the sun's continuos release of plasma and energy into interplanetary space.</rdfs:comment>
+    <dc:title
+    >Mauna Loa Solar Observatory</dc:title>
+  </vsto:Observatory>
+  <vsto:BestDataImage rdf:ID="mlso_data_image_mk_rpb_vig_best">
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_vig"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_rpb"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
+    <dc:title
+    >Best MK Rectangular pB Vignetted Image</dc:title>
+    <dc:description
+    >Best MK Rectangular pB Vignetted Image</dc:description>
+  </vsto:BestDataImage>
+  <vsto:AverageDataImage rdf:ID="mlso_data_image_mk_rpb_vig_avg">
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_G"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_vav"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_rpb"/>
+    <dc:title
+    >Average MK Rectangular pB Vignetted Image</dc:title>
+    <dc:description
+    >Average MK Rectangular pB Vignetted Image</dc:description>
+  </vsto:AverageDataImage>
+  <vsto:AnyDataImage rdf:ID="mlso_data_image_chip_int_all">
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_hsh"/>
+    <dc:description
+    >All CHIP Intensity Images</dc:description>
+    <dc:title
+    >All CHIP Intensity Images</dc:title>
+  </vsto:AnyDataImage>
+  <vsto:AnyDataImage rdf:ID="mlso_data_image_mk_cpb_all">
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_avg"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_cpb"/>
+    <dc:title
+    >All MK Polar pB Images</dc:title>
+    <dc:description
+    >All MK Polar pB Images</dc:description>
+  </vsto:AnyDataImage>
+  <vsto:DdsDataFile rdf:ID="mlso_dds_datafile">
+    <dc:title
+    >DDS</dc:title>
+    <dc:description
+    >OPeNDAP DDS (Data Descriptor Structure) data file</dc:description>
+  </vsto:DdsDataFile>
+  <vsto:AnyDataImage rdf:ID="mlso_data_image_pics_disk_all">
+    <dc:title
+    >All PICS Disk Images</dc:title>
+    <dc:description
+    >All PICS Disk Images</dc:description>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_asl"/>
+    <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_ldc"/>
+  </vsto:AnyDataImage>
+  <rdf:description
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Generic class representing any data product that may be requested by an agent and delivered by a data service.</rdfs:comment>
+  </rdf:Description>
+  <vsto:DasDataFile rdf:ID="mlso_das_datafile">
+    <dc:title
+    >DAS</dc:title>
+    <dc:description
+    >OPeNDAP DAS (Data Attribute Structure) data file</dc:description>
+  </vsto:DasDataFile>
+  <vsto:DataArchive rdf:ID="mlso_data_archive">
+    <dc:title
+    >MLSO</dc:title>
+    <vsto:servesDataFor>
+      <vsto:Photometer rdf:ID="mlso_instrument_pics">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >H-alpha disk and limb images. The original Prominence Monitor (PM) was installed in February, 1980. In February, 1994, it was upgraded to become the Digital Prominence Monitor (DPM) by replacing a 35mm film camera with a high resolution (1534x1030 pixel) CCD camera. The Polarimeter for Inner Coronal Studies (PICS) instrument replaced the DPM instrument in September, 1997. </rdfs:comment>
+        <vsto:hasMeasuredParameter>
+          <vsto:Halpha rdf:ID="mlso_parameter_pics_asc">
+            <dc:title
+            >PICS H-Alpha Disk (Dark corrected)</dc:title>
+            <dc:description
+            >PICS H-Alpha Disk (Dark corrected)</dc:description>
+            <dc:identifier>PICS_ASC</dc:identifier>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >PICS H-Alpha disk data provides a good view into 
+prominence and filament activity and eruptions, 
+as well as flare activity. These images are taken 
+every three minutes and have had minimal processing 
+done. Only a dark subtraction and hot pixel cleanup 
+has been done on these images.
+These images have not been rotated for p-angle.</rdfs:comment>
+          </vsto:Halpha>
+        </vsto:hasMeasuredParameter>
+        <vsto:hasMeasuredParameter>
+          <vsto:Halpha rdf:ID="mlso_parameter_pics_limb">
+            <dc:identifier>PICS_LIMB</dc:identifier>
+            <dc:title
+            >PICS H-Alpha Limb</dc:title>
+            <dc:description
+            >PICS H-Alpha Limb</dc:description>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >PICS H-Alpha limb data provide views of solar 
+limb activity by occulting the solar disk. These 
+data are taken every three minutes. No processing 
+is done on these data.
+These images have not been rotated for p-angle.</rdfs:comment>
+          </vsto:Halpha>
+        </vsto:hasMeasuredParameter>
+        <vsto:hasMeasuredParameter>
+          <vsto:Halpha rdf:ID="mlso_parameter_pics_disk">
+            <dc:title
+            >PICS H-Alpha Disk</dc:title>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >PICS H-Alpha disk data provides a good view into 
+prominence and filament activity and eruptions, 
+as well as flare activity. These images are taken 
+every three minutes and have had a limb darkening 
+correction applied as well as some contrast enhancement.</rdfs:comment>
+            <dc:description
+            >PICS H-Alpha Disk</dc:description>
+            <dc:identifier>PICS_DISK</dc:identifier>
+          </vsto:Halpha>
+        </vsto:hasMeasuredParameter>
+        <dc:description
+        >H-alpha prominence and solar disk monitor</dc:description>
+        <dc:title
+        >PICS</dc:title>
+        <dc:identifier>dpm</dc:identifier>
+        <vsto:dataServedBy rdf:resource="#mlso_data_archive"/>
+      </vsto:Photometer>
+    </vsto:servesDataFor>
+    <vsto:servesDataFor>
+      <vsto:Photometer rdf:ID="mlso_instrument_chip">
+        <vsto:dataServedBy rdf:resource="#mlso_data_archive"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Helium-I (1083 nm) images, collected with the Chromospheric Helium-I Imaging Photometer since April, 1996. </rdfs:comment>
+        <vsto:hasMeasuredParameter>
+          <vsto:He1083nmVelocity rdf:ID="mlso_parameter_chip_vel">
+            <dc:title
+            >CHIP He 1083 nm Velocity</dc:title>
+            <dc:description
+            >CHIP He 1083 nm Velocity</dc:description>
+            <dc:identifier>CHIP_VEL</dc:identifier>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >This is ACOS CHIP Helium 1083 nm Velocity Data. 
+Together with CHIP Intensity Data, this dataset 
+provides a good view of activity in the upper 
+chromosphere region, particularly prominence and 
+filament activity and eruptions. This data is 
+taken every three minutes.</rdfs:comment>
+          </vsto:He1083nmVelocity>
+        </vsto:hasMeasuredParameter>
+        <vsto:hasMeasuredParameter>
+          <vsto:He1083nmIntensity rdf:ID="mlso_parameter_chip_int">
+            <dc:description
+            >CHIP He 1083 nm Intensity</dc:description>
+            <dc:identifier>CHIP_INT</dc:identifier>
+            <dc:title
+            >CHIP He 1083 nm Intensity</dc:title>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >This is the ACOS CHIP Helium I 1083 nm intensity data 
+taken every three minutes at MLSO. Provides a good 
+indication of large scale structure of upper chromosphere 
+and corona including active regions, prominences and 
+filaments, coronal holes, filament channels, etc.</rdfs:comment>
+          </vsto:He1083nmIntensity>
+        </vsto:hasMeasuredParameter>
+        <dc:title
+        >CHIP</dc:title>
+        <dc:identifier>chp</dc:identifier>
+        <dc:description
+        >Chromospheric Helium Imaging Photometer</dc:description>
+      </vsto:Photometer>
+    </vsto:servesDataFor>
+    <vsto:servesDataFor>
+      <vsto:Photometer rdf:ID="mlso_instrument_mk4">
+        <dc:identifier>mk4</dc:identifier>
+        <vsto:dataServedBy rdf:resource="#mlso_data_archive"/>
+        <dc:description
+        >MK4-K Coronameter</dc:description>
+        <dc:title
+        >MK4</dc:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >K-Corona images in white light polarization brightness (pB) (Sep 2000- present) of the
+solar corona from 1.12 to 2.79 solar radii.</rdfs:comment>
+        <vsto:hasMeasuredParameter>
+          <vsto:WhiteLight rdf:ID="mlso_parameter_mk4_rpb_vig">
+            <dc:description
+            >MKIV White Light Vignetted Data (Rectangular Coords)</dc:description>
+            <dc:title
+            >MKIV White Light Vignetted Data (Rectangular Coords)</dc:title>
+            <dc:identifier>MK4_RPB_VIG</dc:identifier>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Qualitative white light coronal images. These images 
+have had an artificial vignetting function applied which 
+reduces the radial density gradient in order to enhance 
+contrast. These images are in no quantitative units. 
+They are useful for viewing activity and making 
+position measurements. The jpegs are made 
+from these images.</rdfs:comment>
+          </vsto:WhiteLight>
+        </vsto:hasMeasuredParameter>
+        <vsto:hasMeasuredParameter>
+          <vsto:WhiteLight rdf:ID="mlso_parameter_mk4_cpb">
+            <dc:description
+            >MKIV White Light pB Data (Polar Coords)</dc:description>
+            <dc:identifier>MK4_CPB</dc:identifier>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >These images are in polar coordinates and are ideal for 
+azimuthal and radial scans. Polarization Brightness 
+data are required for measuring coronal densities 
+and computing masses.</rdfs:comment>
+            <dc:title
+            >MKIV White Light pB Data (Polar Coords)</dc:title>
+          </vsto:WhiteLight>
+        </vsto:hasMeasuredParameter>
+        <vsto:hasMeasuredParameter>
+          <vsto:WhiteLight rdf:ID="mlso_parameter_mk4_rpb">
+            <dc:identifier>MK4_RPB</dc:identifier>
+            <dc:description
+            >MKIV White Light pB Data (Rectangular Coords)</dc:description>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >These images are identical to the MKIV pB data in polar 
+coordinates, except for the coordinate system. 
+Polarization Brightness data are required for 
+measuring coronal densities and computing masses.
+These images are in rectangular coordinates.</rdfs:comment>
+            <dc:title
+            >MKIV White Light pB Data (Rectangular Coords)</dc:title>
+          </vsto:WhiteLight>
+        </vsto:hasMeasuredParameter>
+      </vsto:Photometer>
+    </vsto:servesDataFor>
+    <vsto:servesDataFor>
+      <vsto:Photometer rdf:ID="mlso_instrument_mk3">
+        <dc:description
+        >MK3-K Coronameter</dc:description>
+        <dc:identifier>mk3</dc:identifier>
+        <vsto:hasMeasuredParameter>
+          <vsto:WhiteLight rdf:ID="mlso_parameter_mk3_cpb">
+            <dc:title
+            >MK3 White Light pB Data (Polar Coords)</dc:title>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >These images are in polar coordinates and are ideal for 
+azimuthal and radial scans. Polarization Brightness 
+data are required for measuring coronal densities 
+and computing masses.</rdfs:comment>
+            <dc:identifier>MK3_CPB</dc:identifier>
+            <dc:description
+            >MK3 White Light pB Data (Polar Coords)</dc:description>
+          </vsto:WhiteLight>
+        </vsto:hasMeasuredParameter>
+        <vsto:hasMeasuredParameter>
+          <vsto:WhiteLight rdf:ID="mlso_parameter_mk3_rpb">
+            <dc:description
+            >MK3 White Light pB Data (Rectangular Coords)</dc:description>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >These images are identical to the MKIV pB data in polar 
+coordinates, except for the coordinate system. 
+Polarization Brightness data are required for 
+measuring coronal densities and computing masses.
+These images are in rectangular coordinates.</rdfs:comment>
+            <dc:identifier>MK3_RPB</dc:identifier>
+            <dc:title
+            >MK3 White Light pB Data (Rectangular Coords)</dc:title>
+          </vsto:WhiteLight>
+        </vsto:hasMeasuredParameter>
+        <vsto:hasMeasuredParameter>
+          <vsto:WhiteLight rdf:ID="mlso_parameter_mk3_rpb_vig">
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Qualitative white light coronal images. These images 
+have had an artificial vignetting function applied which 
+reduces the radial density gradient in order to enhance 
+contrast. These images are in no quantitative units. 
+They are useful for viewing activity and making 
+position measurements. The jpegs are made 
+from these images.</rdfs:comment>
+            <dc:title
+            >MK3 White Light Vignetted Data (Rectangular Coords)</dc:title>
+            <dc:description
+            >MK3 White Light Vignetted Data (Rectangular Coords)</dc:description>
+            <dc:identifier>MK3_RPB_VIG</dc:identifier></vsto:WhiteLight>
+        </vsto:hasMeasuredParameter>
+        <dc:title>MK3</dc:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >K-Corona images in white light polarization brightness (pB).
+
+Mark-III (Feb 1980 - Sep 1999) has now been replaced by the Mark-IV </rdfs:comment>
+        <vsto:dataServedBy rdf:resource="#mlso_data_archive"/>
+      </vsto:Photometer>
+    </vsto:servesDataFor>
+    <dc:description>Mauna Loa Solar Observatory data archive</dc:description>
+  </vsto:DataArchive>
+</rdf:RDF>
+

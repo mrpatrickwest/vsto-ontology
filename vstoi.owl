@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY vsto "https://vsto.org/schema/">
+  <!ENTITY vstoi "https://vsto.org/individuals/">
+]>
+<rdf:RDF
+    xmlns="&vsto;"
+    xmlns:vsto="&vsto;"
+    xmlns:vstoi="&vstoi;"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xml:base="http://escience.rpi.edu/ontology/vsto/2/0/vsto_all.owl">
+
+<!-- Instance Data for VSTO -->
+  <Atmosphere rdf:ID="&vstoi;SunAtmosphere">
+    <dc:title>Sun Atmosphere</dc:title>
+    <hasSuperPhysicalDomain>
+      <Star rdf:ID="&vstoi;Sun">
+        <hasSubPhysicalDomain rdf:resource="#SunAtmosphere"/>
+        <dc:title>Sun</dc:title>
+      </Star>
+    </hasSuperPhysicalDomain>
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;SunCorona">
+        <hasSuperPhysicalDomain rdf:resource="#SunAtmosphere"/>
+        <dc:title>Sun Corona</dc:title>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+  </Atmosphere>
+  <Atmosphere rdf:ID="&vstoi;EarthAtmosphere">
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;EarthStratosphere">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From the 7–17 km range (upper boundary of the Troposphere) to about 50 km, temperature increasing with height.</rdfs:comment>
+        <dc:title>Earth Stratosphere</dc:title>
+        <hasSuperPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+        <hasMaximumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hasMaximumAltitudeInKm>
+        <hasMinimumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.0</hasMinimumAltitudeInKm>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;EarthOzoneLayer">
+        <hasMaximumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hasMaximumAltitudeInKm>
+        <dc:title>Earth Ozone Layer</dc:title>
+        <hasSuperPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+        <hasMinimumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</hasMinimumAltitudeInKm>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Or ozonosphere, the region of the Earth's Atmosphere approximately in the range 10 - 50 km, where stratospheric ozone is found. Note that even within this region, ozone is a minor constituent by volume.</rdfs:comment>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;EarthThermosphere">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From 80–85 km (upper boundary of the Mesosphere) to 640+ km, temperature increasing with height.</rdfs:comment>
+        <hasMinimumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">85.0</hasMinimumAltitudeInKm>
+        <dc:title>Earth Troposphere</dc:title>
+        <hasMaximumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">640.0</hasMaximumAltitudeInKm>
+        <hasSuperPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;EarthMesosphere">
+        <hasMaximumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">85.0</hasMaximumAltitudeInKm>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From about 50 km (upper boundary of the Stratosphere) to the range of 80 km to 85 km, temperature decreasing with height.</rdfs:comment>
+        <dc:title>Earth Mesosphere</dc:title>
+        <hasSuperPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+        <hasMinimumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hasMinimumAltitudeInKm>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;EarthMagnetosphere">
+        <hasSuperPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The region of the Earth Atmosphere where the Earth's magnetic field interacts with the solar wind from the Sun. It extends for tens of thousands of kilometers, with a long tail away from the Sun.</rdfs:comment>
+        <dc:title>Earth Magnetosphere</dc:title>
+        <hasMinimumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</hasMinimumAltitudeInKm>
+        <hasMaximumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100000.0</hasMaximumAltitudeInKm>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+    <dc:title>Earth Atmosphere</dc:title>
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;EarthExosphere">
+        <hasMinimumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">550.0</hasMinimumAltitudeInKm>
+        <hasSuperPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The region of the Earth Atmosphere above the Ionosphere, where the atmosphere thins out into space. This is the last major atmosphere.</rdfs:comment>
+        <dc:title>Earth Exosphere</dc:title>
+        <hasMaximumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">800.0</hasMaximumAltitudeInKm>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+    <hasSuperPhysicalDomain>
+      <Planet rdf:ID="&vstoi;Earth">
+        <dc:title>Earth</dc:title>
+        <hasSubPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+        <hasSubPhysicalDomain>
+          <SurfaceRegion rdf:ID="&vstoi;EarthSurface">
+            <hasSouthMostLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-90.0</hasSouthMostLatitude>
+            <hasWestMostLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-180.0</hasWestMostLongitude>
+            <hasSuperPhysicalDomain rdf:resource="#Earth"/>
+            <dc:title>Earth Surface</dc:title>
+            <hasSubPhysicalDomain>
+              <LatitudeCircle rdf:ID="&vstoi;EarthNorthPole">
+                <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</hasLatitude>
+                <hasSuperPhysicalDomain rdf:resource="#EarthSurface"/>
+                <dc:title>North Pole</dc:title>
+              </LatitudeCircle>
+            </hasSubPhysicalDomain>
+            <hasSubPhysicalDomain>
+              <LatitudeCircle rdf:ID="&vstoi;ArcticCircle">
+                <hasSuperPhysicalDomain rdf:resource="#EarthSurface"/>
+                <dc:title>Arctic Circle</dc:title>
+                <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">66.0</hasLatitude>
+              </LatitudeCircle>
+            </hasSubPhysicalDomain>
+            <hasSubPhysicalDomain>
+              <LatitudeCircle rdf:ID="&vstoi;AntarcticCircle">
+                <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-66.0</hasLatitude>
+                <hasSuperPhysicalDomain rdf:resource="#EarthSurface"/>
+                <dc:title>Antarctic Circle</dc:title>
+              </LatitudeCircle>
+            </hasSubPhysicalDomain>
+            <hasSubPhysicalDomain>
+              <LatitudeCircle rdf:ID="&vstoi;TropicOfCapricorn">
+                <hasSuperPhysicalDomain rdf:resource="#EarthSurface"/>
+                <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-23.0</hasLatitude>
+                <dc:title>Tropic of Capricorn</dc:title>
+              </LatitudeCircle>
+            </hasSubPhysicalDomain>
+            <hasNorthMostLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</hasNorthMostLatitude>
+            <hasSubPhysicalDomain>
+              <SurfaceRegion rdf:ID="&vstoi;Arctic">
+                <hasNorthMostLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.0</hasNorthMostLatitude>
+                <hasEastMostLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">180.0</hasEastMostLongitude>
+                <dc:title>Arctic</dc:title>
+                <hasSuperPhysicalDomain rdf:resource="#EarthSurface"/>
+                <hasSouthMostLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">66.0</hasSouthMostLatitude>
+                <hasWestMostLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-180.0</hasWestMostLongitude>
+              </SurfaceRegion>
+            </hasSubPhysicalDomain>
+            <hasEastMostLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">180.0</hasEastMostLongitude>
+            <hasSubPhysicalDomain>
+              <LatitudeCircle rdf:ID="&vstoi;EarthSouthPole">
+                <dc:title>South Pole</dc:title>
+                <hasSuperPhysicalDomain rdf:resource="#EarthSurface"/>
+                <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-90.0</hasLatitude>
+              </LatitudeCircle>
+            </hasSubPhysicalDomain>
+            <hasSubPhysicalDomain>
+              <LatitudeCircle rdf:ID="&vstoi;TropicOfCancer">
+                <hasSuperPhysicalDomain rdf:resource="#EarthSurface"/>
+                <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">23.0</hasLatitude>
+                <dc:title>Tropic of Cancer</dc:title>
+              </LatitudeCircle>
+            </hasSubPhysicalDomain>
+            <hasSubPhysicalDomain>
+              <SurfaceRegion rdf:ID="&vstoi;Antarctic">
+                <hasSuperPhysicalDomain rdf:resource="#EarthSurface"/>
+                <hasNorthMostLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-66.0</hasNorthMostLatitude>
+                <hasEastMostLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">180.0</hasEastMostLongitude>
+                <dc:title>Antarctic</dc:title>
+                <hasWestMostLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-180.0</hasWestMostLongitude>
+                <hasSouthMostLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-90.0</hasSouthMostLatitude>
+              </SurfaceRegion>
+            </hasSubPhysicalDomain>
+            <hasSubPhysicalDomain>
+              <LatitudeCircle rdf:ID="&vstoi;EarthEquator">
+                <hasLatitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</hasLatitude>
+                <hasSuperPhysicalDomain rdf:resource="#EarthSurface"/>
+                <dc:title>Equator</dc:title>
+              </LatitudeCircle>
+            </hasSubPhysicalDomain>
+          </SurfaceRegion>
+        </hasSubPhysicalDomain>
+      </Planet>
+    </hasSuperPhysicalDomain>
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;EarthTroposphere">
+        <hasSuperPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+        <hasMaximumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.0</hasMaximumAltitudeInKm>
+        <hasMinimumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</hasMinimumAltitudeInKm>
+        <dc:title>Earth Troposphere</dc:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">From the Greek word "tropos" meaning to turn or mix. The troposphere is the lowest layer of the atmosphere starting at the surface going up to between 7 km at the poles and 17 km at the equator with some variation due to weather factors. The troposphere has a great deal of vertical mixing due to solar heating at the surface. This heating warms air masses, which then rise to release latent heat as sensible heat that further buoys the air mass. This process continues until all water vapor is removed. In the troposphere, on average, temperature decreases with height due to expansive cooling.</rdfs:comment>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;EarthUpperAtmosphere">
+        <hasMinimumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">85.0</hasMinimumAltitudeInKm>
+        <hasSuperPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+        <hasMaximumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">800.0</hasMaximumAltitudeInKm>
+        <dc:title>Earth Upper Atmosphere</dc:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The region of the Earth's Atmosphere above the mesopause.</rdfs:comment>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+    <hasSubPhysicalDomain>
+      <AtmosphereLayer rdf:ID="&vstoi;EarthIonosphere">
+        <hasSuperPhysicalDomain rdf:resource="#EarthAtmosphere"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The region of the Earth Atmosphere containing ions: approximately the mesosphere and thermosphere up to 550 km.</rdfs:comment>
+        <hasMaximumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">550.0</hasMaximumAltitudeInKm>
+        <hasMinimumAltitudeInKm rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</hasMinimumAltitudeInKm>
+        <dc:title>Earth Ionosphere</dc:title>
+      </AtmosphereLayer>
+    </hasSubPhysicalDomain>
+  </Atmosphere>
+</rdf:RDF>
+
