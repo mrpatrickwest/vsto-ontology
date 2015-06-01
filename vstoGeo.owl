@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY vsto "https://vsto.org/schema#">
+  <!ENTITY time "http://www.w3.org/2006/time#">
+]>
+<rdf:RDF
+    xmlns="&vsto;"
+    xmlns:vsto="&vsto;"
+    xmlns:time="&time;"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xml:base="&vsto;">
+
+<!-- Geo -->
+  <owl:Class rdf:about="PhysicalDomain">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Domain</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="SurfaceRegion">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="Surface"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasSuperPhysicalDomain"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="PhysicalDomain"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surface Region</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="AtmosphereLayer">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="PhysicalDomain"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasSuperPhysicalDomain"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="Atmosphere"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Layer</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="Atmosphere">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="ElectronState"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasState"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="PhysicalDomain"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="Planet"/>
+              <owl:Class rdf:ID="Star"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasSuperPhysicalDomain"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="NeutralState"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasState"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasState"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="IonState"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="AstronomicalObject">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astronomical Object</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="PhysicalDomain"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Surface">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="PhysicalDomain"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasSuperPhysicalDomain"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="AstronomicalObject"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surface</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="SurfaceLine">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasSuperPhysicalDomain"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="Surface"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="PhysicalDomain"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surface Line</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Parallel">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parallel</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="SurfaceLine"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="LongitudeCircle">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Longitude Circle</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="SurfaceLine"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="hasLongitude"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Meridian">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meridian</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="SurfaceLine"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="LatitudeCircle">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latitude Circle</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="SurfaceLine"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="hasLatitude"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+</rdf:RDF>
+

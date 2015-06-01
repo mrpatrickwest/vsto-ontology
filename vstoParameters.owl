@@ -1,0 +1,314 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY vsto "https://vsto.org/schema#">
+  <!ENTITY time "http://www.w3.org/2006/time#">
+]>
+<rdf:RDF
+    xmlns="&vsto;"
+    xmlns:vsto="&vsto;"
+    xmlns:time="&time;"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xml:base="&vsto;">
+
+<!-- Parameters -->
+  <owl:ObjectProperty rdf:about="hasMeasuredParameter">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="InstrumentOperatingMode"/>
+          <owl:Class rdf:about="Instrument"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf rdf:resource="isMeasuredBy"/>
+    <rdfs:range rdf:resource="Parameter"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:about="Parameter">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parameter</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      A measured physical property in signal units.  It has units and possibly a timestamp.  The signal units are not the physical ones, like Gauss or Kelvin, but are something inherent in the detector, like volts or ADU's.  The physical units are either calculated or inferred from the signal units.
+    </rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="Weight">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Weight</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="AtomicWeight">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Weight"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic Weight</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="VectorField">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vector Field</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="FieldComponent">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Field Component</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="VectorField"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="ElectroMagneticField">
+    <rdfs:subClassOf rdf:resource="VectorField"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electro Magnetic Field</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="CurrentDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ElectroMagneticField"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Current Density</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="ElectricCurrentDensity">
+    <rdfs:subClassOf rdf:resource="CurrentDensity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Current Density</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="MagneticField">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnetic Field</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="ElectroMagneticField"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="ElectricField">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Field</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="ElectroMagneticField"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="ElectricField">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Field</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="ElectroMagneticField"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="Density">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Density</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="IonDensity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Density"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion Density</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="WaveNumber">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wave Number</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Frequency">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frequency</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="EnergyFlux">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy Flux</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="Wind">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wind</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Deposition">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Deposition</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="StatisticalMeasure">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Measure</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Period">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Period</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="Coordinate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate Parameter</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="Attribute">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attribute</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Utility class representing a generic (name,value) pair</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:ID="TimeDependentParameter">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class rdf:ID="Time"/>
+            </owl:someValuesFrom>
+            <owl:onProperty>
+              <owl:ObjectProperty rdf:ID="hasCoordinate"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Class rdf:about="Parameter"/>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time Dependent Parameter</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="Potential">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="GeoPotential">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Potential"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geo Potential</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="PotentialTemperature">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential Temperature</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Temperature"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="Entropy">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Entropy</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="PotentialEntropy">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential Entropy</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Entropy"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="ElectricPotential">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Potential</rdfs:label>
+    <rdfs:subClassOf rdf:resource="Potential"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="GravitationalPotential">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gravitational Potential</rdfs:label>
+    <rdfs:subClassOf rdf:resource="Potential"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Polarization">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polarization</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="ElectromagneticRadiationIntensity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electromagnetic Radiation Intensity</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasCoordinate"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="Time"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="Velocity">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Parameter"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="Time"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasCoordinate"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="Altitude"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasCoordinate"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="NeutralVelocity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Velocity"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral Velocity</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="ElectronVelocityField">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron Velocity Field</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="IonVelocityField"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="IonVelocity">
+    <rdfs:subClassOf rdf:resource="Velocity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion Velocity</rdfs:label>
+  </owl:Class>
+
+</rdf:RDF>
+
