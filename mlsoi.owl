@@ -21,26 +21,26 @@
   <vsto:BestDataImage rdf:ID="mlso_data_image_mk_rpb_best">
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_processing_cal">
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >cal</vsto:hasAttValue>
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >processing</vsto:hasAttName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >cal</vsto:hasAttributeValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttributeName>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_quality_A">
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >quality</vsto:hasAttName>
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >A</vsto:hasAttValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >quality</vsto:hasAttributeName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >A</vsto:hasAttributeValue>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_wave_length_rpb">
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >wave_length</vsto:hasAttName>
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >rpb</vsto:hasAttValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttributeName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >rpb</vsto:hasAttributeValue>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <dc:title
@@ -52,18 +52,18 @@
     <vsto:hasAttributes rdf:resource="#mlso_attribute_wave_length_rpb"/>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_processing_vig">
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >processing</vsto:hasAttName>
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >vig</vsto:hasAttValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttributeName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >vig</vsto:hasAttributeValue>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_processing_vav">
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >vav</vsto:hasAttValue>
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >processing</vsto:hasAttName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >vav</vsto:hasAttributeValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttributeName>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <dc:title
@@ -76,18 +76,18 @@
     >All PICS Limb Images</dc:description>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_processing_raw">
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >processing</vsto:hasAttName>
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >raw</vsto:hasAttValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttributeName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >raw</vsto:hasAttributeValue>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_wave_length_alr">
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >alr</vsto:hasAttValue>
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >wave_length</vsto:hasAttName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >alr</vsto:hasAttributeValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttributeName>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <dc:title
@@ -101,18 +101,18 @@
     <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_wave_length_asc">
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >asc</vsto:hasAttValue>
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >wave_length</vsto:hasAttName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >asc</vsto:hasAttributeValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttributeName>
       </vsto:Attribute>
     </vsto:hasAttributes>
   </vsto:AnyDataImage>
   <vsto:Attribute rdf:ID="mlso_attribute_quality_U">
-    <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >quality</vsto:hasAttName>
-    <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >U</vsto:hasAttValue>
+    <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >quality</vsto:hasAttributeName>
+    <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >U</vsto:hasAttributeValue>
   </vsto:Attribute>
   <vsto:BestDataImage rdf:ID="mlso_data_image_chip_vel_best">
     <dc:description
@@ -122,10 +122,10 @@
     <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_wave_length_bsh">
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >bsh</vsto:hasAttValue>
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >wave_length</vsto:hasAttName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >bsh</vsto:hasAttributeValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttributeName>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
@@ -133,26 +133,26 @@
   <vsto:AverageDataImage rdf:ID="mlso_data_image_mk_cpb_avg">
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_quality_G">
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >G</vsto:hasAttValue>
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >quality</vsto:hasAttName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >G</vsto:hasAttributeValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >quality</vsto:hasAttributeName>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_processing_avg">
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >avg</vsto:hasAttValue>
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >processing</vsto:hasAttName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >avg</vsto:hasAttributeValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttributeName>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_wave_length_cpb">
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >cpb</vsto:hasAttValue>
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >wave_length</vsto:hasAttName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >cpb</vsto:hasAttributeValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttributeName>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <dc:description
@@ -182,18 +182,18 @@
     <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_wave_length_asl">
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >wave_length</vsto:hasAttName>
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >asl</vsto:hasAttValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttributeName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >asl</vsto:hasAttributeValue>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_processing_ldc">
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >processing</vsto:hasAttName>
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >ldc</vsto:hasAttValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >processing</vsto:hasAttributeName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >ldc</vsto:hasAttributeValue>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <dc:description
@@ -255,20 +255,20 @@
     >Best CHIP Intensity Image</dc:description>
     <vsto:hasAttributes>
       <vsto:Attribute rdf:ID="mlso_attribute_wave_length_hsh">
-        <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >hsh</vsto:hasAttValue>
-        <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >wave_length</vsto:hasAttName>
+        <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >hsh</vsto:hasAttributeValue>
+        <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >wave_length</vsto:hasAttributeName>
       </vsto:Attribute>
     </vsto:hasAttributes>
     <vsto:hasAttributes rdf:resource="#mlso_attribute_quality_A"/>
     <vsto:hasAttributes rdf:resource="#mlso_attribute_processing_cal"/>
   </vsto:BestDataImage>
   <vsto:Attribute rdf:ID="mlso_attribute_quality_B">
-    <vsto:hasAttName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >quality</vsto:hasAttName>
-    <vsto:hasAttValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >B</vsto:hasAttValue>
+    <vsto:hasAttributeName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >quality</vsto:hasAttributeName>
+    <vsto:hasAttributeValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >B</vsto:hasAttributeValue>
   </vsto:Attribute>
   <vsto:OpendapDataFile rdf:ID="mlso_opendap_datafile">
     <dc:description
