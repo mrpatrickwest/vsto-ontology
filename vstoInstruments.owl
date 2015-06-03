@@ -14,20 +14,15 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xml:base="&vsto;">
 
-<!-- Instruments -->
-  <owl:Class rdf:about="Instrument">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instrument</rdfs:label>
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-      A device that measures a physical phenomenon or parameter.  At a minimum, it possesses a detector which produces a signal from which the desired quantity is calculated or inferred.  The detector signal possesses the information needed to either obtain the value of the phenomenon (e.g, temperature: a voltage is converted into a temperature unit) or infer its value using further processing and computation (magnetic fields: detector intensities at a different wavelengths and polarization states are processed to infer a magnetic field strength).
- 
-      An instrument does not necessarily require a way to store its measured quantity (e.g, a hard disk).
-    </rdfs:comment>
-  </owl:Class>
-
   <owl:Class rdf:about="OpticalInstrument">
     <rdfs:subClassOf rdf:resource="Instrument"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Optical Instrument</rdfs:label>
   </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="hasFocalLength">
+    <rdfs:domain rdf:resource="OpticalInstrument"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:ObjectProperty>
 
   <owl:Class rdf:about="Photometer">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photometer</rdfs:label>
@@ -287,6 +282,39 @@
     <rdfs:subClassOf rdf:resource="Instrument"/>
   </owl:Class>
 
+  <owl:Class rdf:ID="PhasedArrayRadar">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Radar"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phased Array Radar</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="DopplerRadar">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Radar"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doppler Radar</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="IonosphericDopplerRadar">
+    <rdfs:subClassOf rdf:resource="DopplerRadar"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ionospheric Doppler Radar</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="IncoherentScatterRadar">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Incoherent Scatter Radar</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Radar"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="BiStaticRadar">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bi Static Radar</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Radar"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
   <owl:Class rdf:ID="GroundBasedRadar">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Radar"/>
@@ -310,6 +338,16 @@
 
   <owl:Class rdf:ID="LFRadar">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LF Radar</rdfs:label>
+    <rdfs:subClassOf rdf:resource="MiddleAtmosphereRadar"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="MeteorWindRadar">
+    <rdfs:subClassOf rdf:resource="MiddleAtmosphereRadar"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meteor Wind Radar</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="MFRadar">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MF Radar</rdfs:label>
     <rdfs:subClassOf rdf:resource="MiddleAtmosphereRadar"/>
   </owl:Class>
 
@@ -370,22 +408,110 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyot Filter Instrument</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Detector">
-    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device which detects measurements, such as temperature or wind velocity</rdfs:comment>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Detector</rdfs:label>
+  <owl:Class rdf:about="FilterInstrument">
+    <rdfs:subClassOf rdf:resource="Instrument"/>
+     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filter Instrument</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="ImagingDetector">
-    <rdfs:subClassOf rdf:resource="Detector"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imaging Detector</rdfs:label>
-  </owl:Class>
-
-  <owl:Class rdf:ID="CCD">
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCD Imaging Detector</rdfs:label>
+  <owl:Class rdf:ID="BirefringentFilter">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="ImagingDetector"/>
+      <owl:Class rdf:ID="FilterInstrument"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birefringent Filter Instrument</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="LyotFilter">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="FilterInstrument"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyot Filter Instrument</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:about="InterferenceFilter">
+    <rdfs:subClassOf rdf:resource="FilterInstrument"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interface Filter Instrument</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Sounder">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sounder</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="Instrument"/>
     </rdfs:subClassOf>
   </owl:Class>
+
+  <owl:Class rdf:ID="OzoneSonde">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ozone Sounde</rdfs:label>
+    <rdfs:subClassOf rdf:resource="Sounder"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="IonSonde">
+    <rdfs:subClassOf rdf:resource="Sounder"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion Sonde</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Telescope">
+    <rdfs:subClassOf rdf:resource="Instrument"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Telescope</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Spectrograph">
+    <rdfs:subClassOf rdf:resource="Instrument"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spectrograph</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="GroundBasedInstrument">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="hasLatitude"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="hasLongitude"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="Instrument"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground Based Instrument</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="GroundBasedIndices">
+    <rdfs:subClassOf rdf:resource="Instrument"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ground Based Indices</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Model">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Model</rdfs:label>
+    <rdfs:subClassOf rdf:resource="Instrument"/>
+  </owl:Class>
+
+<!-- Properties -->
+  <owl:FunctionalProperty rdf:about="dataServedBy">
+    <owl:inverseOf rdf:resource="servesDataFor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="Instrument"/>
+    <rdfs:range rdf:resource="DataArchive"/>
+  </owl:FunctionalProperty>
+
+  <owl:ObjectProperty rdf:ID="servesDataFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:domain rdf:resource="DataArchive"/>
+    <rdfs:range rdf:resource="Instrument"/>
+    <owl:inverseOf>
+      <owl:FunctionalProperty rdf:ID="dataServedBy"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:ID="outputOf">
+    <rdfs:range rdf:resource="Instrument"/>
+  </owl:ObjectProperty>
 
 </rdf:RDF>
 

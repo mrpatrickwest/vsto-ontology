@@ -22,8 +22,8 @@
 
   <owl:Class rdf:ID="&mlso;MLSOmetadataService">
     <rdfs:subClassOf rdf:resource="&vsto;MetadataService"/>
-    <rdfs:comment>Class that defines the possible metadata queries specific to the MLSO data archive.</rdfs:comment>
-    <rdfs:label>MLSO Metadata Service</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class that defines the possible metadata queries specific to the MLSO data archive.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLSO Metadata Service</rdfs:label>
   </owl:Class>
 
 </rdf:RDF>

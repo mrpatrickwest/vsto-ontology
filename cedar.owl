@@ -21,8 +21,8 @@
 
   <owl:Class rdf:ID="CEDARmetadataService">
     <rdfs:subClassOf rdf:resource="&vsto;MetadataService"/>
-    <rdfs:comment>Class that defines the possible metadata queries specific to the CEDAR data archive.</rdfs:comment>
-    <rdfs:label>CCEDAR Metadata Service</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Class that defines the possible metadata queries specific to the CEDAR data archive.</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCEDAR Metadata Service</rdfs:label>
   </owl:Class>
 
 </rdf:RDF>

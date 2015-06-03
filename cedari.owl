@@ -226,8 +226,8 @@
     >523</dc:identifier>
   </vsto:ElectronDensity>
   <vsto:Observatory rdf:ID="cedar_observatory_millstone_hill">
-    <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >http://www.haystack.mit.edu/homepage.html</vsto:reference>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.haystack.mit.edu/homepage.html</rdfs:seeAlso>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The Millstone Hill Observatory, located in Westford, Massachusetts, is a broad-based atmospheric sciences research facility owned and operated by the Massachusetts Institute of Technology.</rdfs:comment>
     <dc:title
@@ -304,10 +304,10 @@ The observatory's radio telescope is the largest single-aperture telescope ever 
 Although it has been given many usages, the observatory's main purpose is to detail and observe stellar objects.</rdfs:comment>
     <dc:title
     >Arecibo</dc:title>
-    <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >http://www.naic.edu/</vsto:reference>
-    <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >http://en.wikipedia.org/wiki/Arecibo_Observatory</vsto:reference>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.naic.edu/</rdfs:seeAlso>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Arecibo_Observatory</rdfs:seeAlso>
   </vsto:Observatory>
   <vsto:DataQualityCode rdf:ID="cedar_parameter_477">
     <dc:description
@@ -412,8 +412,8 @@ Although it has been given many usages, the observatory's main purpose is to det
   <vsto:Observatory rdf:ID="cedar_observatory_peach_mountain">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Peach Mountain is the home of the 24 inches McMath Telescope and is part of Stinchfield Woods.  Stinchfield Woods is owned by the University of Michigan and used by several university departments including the Astronomy Department and the School of Natural Resources and Environment.</rdfs:comment>
-    <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-    >http://www.umich.edu/~lowbrows/theclub/mcmath.html</vsto:reference>
+    <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.umich.edu/~lowbrows/theclub/mcmath.html</rdfs:seeAlso>
     <dc:title
     >Peach Mountain</dc:title>
   </vsto:Observatory>
@@ -769,8 +769,8 @@ Although it has been given many usages, the observatory's main purpose is to det
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <dc:identifier
         >1140</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pkr</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pkr</rdfs:seeAlso>
         <dc:title
         >PKR</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -883,8 +883,8 @@ In the absence of any signal echo the main contribution to noise is the radio no
     >CEDAR</dc:title>
     <vsto:servesDataFor>
       <vsto:MSTRadar rdf:ID="cedar_instrument_1040">
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:arm</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:arm</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <dc:description
         >Arecibo P.R. MST Radar</dc:description>
@@ -1036,8 +1036,8 @@ The ion composition changes from mostly O2+ and NO+ at lower altitudes, to mostl
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <dc:identifier
         >33</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mlh</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mlh</rdfs:seeAlso>
       </vsto:IncoherentScatterRadar>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -1452,8 +1452,8 @@ The ion composition changes from mostly O2+ and NO+ at lower altitudes, to mostl
         >OBN</dc:title>
         <dc:identifier
         >1750</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</rdfs:seeAlso>
       </vsto:MeteorWindRadar>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -2448,8 +2448,8 @@ The ion composition changes from mostly O2+ and NO+ at lower altitudes, to mostl
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mlh</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mlh</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_31_3071">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_483"/>
@@ -3008,8 +3008,8 @@ The ion composition changes from mostly O2+ and NO+ at lower altitudes, to mostl
         <dc:description
         >Davis, Antarctica MF radar</dc:description>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dav</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dav</rdfs:seeAlso>
         <dc:identifier
         >1215</dc:identifier>
         <vsto:hasInstrumentOperatingMode>
@@ -3305,8 +3305,8 @@ The height coverage is 50-100 km during the day or night at Davis. The pulse wid
         </vsto:hasInstrumentOperatingMode>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The total hemispheric power input is computed from NOAA/TIROS and DMSP satellite measurements of high latitude precipitating energy flux carried by ions and electons with energies between 300 eV and 20 keV (NOAA/TIROS), or carried by electrons with energies between 460 eV and 30 keV (DMSP). The satellite orbits are sun synchronous around 850 km altitude. Times given are the center of the polar pass used to make the estimate where a typical polar pass takes about 25 minutes. Often there are two satellites operating simultaneously providing coverage at 30 to 60 minute intervals between auroral latitude crossings. The energy flux observations made during a single pass over the polar regions (above about 45 degrees of magnetic latitude) are used to estimate the total precipitating power input to a single hemisphere at that time. This power index was devised by David Evans for the NOAA/TIROS satellites, and adapted for the DMSP satellites by Frederick Rich and William Denig.</rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ehp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ehp</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_175_31201">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_367"/>
@@ -3433,8 +3433,8 @@ The height coverage is 50-100 km during the day or night at Davis. The pulse wid
     </vsto:servesDataFor>
     <vsto:servesDataFor>
       <vsto:FabryPerot rdf:ID="cedar_instrument_5535">
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:rfp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:rfp</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_5535_17011">
             <vsto:hasMeasuredParameter>
@@ -3672,8 +3672,8 @@ The interferometer has an 8-position filter wheel. The wavelengths used at Resol
         >Global Positioning System Receivers</dc:description>
         <dc:title
         >GPS</dc:title>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/</rdfs:seeAlso>
         <dc:identifier
         >110</dc:identifier>
         <vsto:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
@@ -4059,8 +4059,8 @@ The interferometer has an 8-position filter wheel. The wavelengths used at Resol
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_365"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:are</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:are</rdfs:seeAlso>
         <dc:description
         >AMIE Model Output</dc:description>
         <vsto:hasInstrumentOperatingMode>
@@ -4140,8 +4140,8 @@ Most of these campaigns do not have plots on the CEDAR Database. But the input G
         >321</dc:identifier>
         <dc:title
         >SDL</dc:title>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sdl</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sdl</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_321_20001">
             <dc:description
@@ -4212,8 +4212,8 @@ The 4 channels correspond to:
    2. OI (630.0 nm, red) forbidden
    3. OI (844.6 nm, eight) permitted
    4. N2 (871.0 nm or 871.4 nm) first positive group (1PG) 2,1 molecular band </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:y4p</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:y4p</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <dc:identifier
         >4473</dc:identifier>
@@ -4738,8 +4738,8 @@ The 4 channels correspond to:
       <vsto:IncoherentScatterRadar rdf:ID="cedar_instrument_41">
         <dc:identifier
         >41</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sts</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sts</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_41_4205">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_-690"/>
@@ -5254,8 +5254,8 @@ There are three basic types of operating modes for the incoherent scatter radar:
 The drift mode, which finds perpendicular east and north (near vertical) ion drifts, has data from 1984 to the present. The analysis scheme to derive the drifts was changed starting in September of 1994 with a resulting increase in the data quality. Hard copies of time series plots of the older ion drifts are available upon request from NCAR.
 
 The bistatic coherent radar experiment involves the 50 MHz transmitter at Jicamarca and a reciever at Paracas (13.85 S, 76.25 W), which is about 200 km south of Jicamarca. E region (~95-110 km) electron density data are available using a 4 microsecond (~0.6 km) pulse length from Mar 2004. This experiment can run concurrently with either the Faraday rotation or the drift mode. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:jro</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:jro</rdfs:seeAlso>
         <dc:description
         >Jicamarca Peru I.S. Radar</dc:description>
         <vsto:hasInstrumentOperatingMode>
@@ -5618,8 +5618,8 @@ The bistatic coherent radar experiment involves the 50 MHz transmitter at Jicama
     </vsto:servesDataFor>
     <vsto:servesDataFor>
       <vsto:GroundBasedIndices rdf:ID="cedar_instrument_211">
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aei</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aei</rdfs:seeAlso>
         <dc:identifier
         >211</dc:identifier>
         <dc:description
@@ -5726,8 +5726,8 @@ When the Assimilative Mapping of Ionospheric Electrodynamics (AMIE) procedure us
         >The Saskatoon HF radar is located in central Saskatchewan (52.16 deg N, -106.53 deg E) and looks over a section of ionosphere poleward of 53 deg N that covers north-central Canada including Hudson Bay and the Canadian arctic archipelago. It has operated since 1993. The facility is part of the SuperDARN network of HF radars that extends from western North America to Scandinavia in the Northern hemisphere and covers much of Antarctica in the Southern hemisphere. The SuperDARN radar for the most direct 2-D merging of Saskatoon velocity data is located at Kapuskasing, Canada.
 
 The radar forms and steers its beam by the phasing of transmissions from 16 elements in a linear antenna array. A second 4-element array provide the capability to measure elevation angle. The basic radar operation consists of the following steps: i) selection of a beam position (0-15), ii) search for the quietest 5-kHz channel about the assigned transmitting frequency (8-20 MHz), iii) repeated transmission of a multi-pulse sequence over the selected integration period and reception of backscattered signal with gating in range (1-70), and iv) calculation of the auto-correlation functions (ACFs). These operations are usually carried out in sequence for the 16 beam positions, which collectively constitute 1 scan. The beam integration period is typically 6 or 7 sec, and the scan repeat time is 96 sec or 120 sec. Within a scan, beam 0 corresponds to the most westward beam position and beam 15 to the most eastward. The azimuth sector scanned is approximately 50 deg wide and is centered on 23.1 deg E of N. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:shf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:shf</rdfs:seeAlso>
         <dc:description
         >Saskatoon HF Radar</dc:description>
         <dc:identifier
@@ -5912,8 +5912,8 @@ JULIA ionospheric irregularity data have been collected beginning in August 1996
 Echoes from 150-km irregularities were first observed in the early 1960's over Jicamarca using the ISR [Balsley, 1964]. These echoes occurr only during the daytime and show very little seasonal dependence. The 150-km echoes have been observed at Jicamarca with the ISR on a campaign basis [e. g., Kudeki and Fawcett, 1993]. Sucessful low power observations of 150-km echoes have been performed since 2001 with the JULIA radar using two different antenna beam configurations (a single vertical beam, and an east-west beam pair). Using the vertical beam, only the vertical ion Doppler velocities are obtained, while using the east-west beam position both the vertical and zonal ion velocities are measured. In the latter case, two beams are used at the same time using diffent antenna sections.
 
 An important finding from the study of these 150-km echoes is that the daytime vertical Doppler velocities of the 150-km irregularities averaged over the altitudinal region of the irregularities were in excellent agreement with the mean F region (200-500 km) ISR vertical drifts [Chau and Woodman, 2004]. Vertical is perpendicular north at the magnetic equator where the B field is horizontally directed from the south to the north. The zonal ion Doppler velocities from the east-west JULIA beam are in reasonable agreement with the ISR zonal ion velocities. Although 150-km echoes have been observed and studied for many years, the physical mechanism which causes them is still unknown. This JULIA database of representative zonal and vertical (perpendicular north) ion drifts could contribute in providing very precise proxy measurements of F region drifts using less powerful and more economical radar.</rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:jul</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:jul</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <dc:description
         >JULIA Jicamarca Peru Coherent Radar</dc:description>
@@ -5950,8 +5950,8 @@ An important finding from the study of these 150-km echoes is that the daytime v
         >Kauai, Hawaii MF RADAR</dc:description>
         <dc:identifier
         >1270</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</rdfs:seeAlso>
         <dc:title
         >KAU</dc:title>
         <vsto:hasInstrumentOperatingMode>
@@ -6010,8 +6010,8 @@ An important finding from the study of these 150-km echoes is that the daytime v
       <vsto:MFRadar rdf:ID="cedar_instrument_1254">
         <dc:identifier
         >1254</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:tir</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:tir</rdfs:seeAlso>
         <dc:title
         >TIR</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -6102,8 +6102,8 @@ The height coverage is 68-98 km during the day and 70-98 km during the night. Th
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_62"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</rdfs:seeAlso>
         <dc:title
         >RTG</dc:title>
         <dc:description
@@ -6231,8 +6231,8 @@ The power profiles are calibrated with an on-site ionosonde, and are then correc
             >70_6118</dc:identifier>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_70_6314">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_170"/>
@@ -6285,8 +6285,8 @@ The power profiles are calibrated with an on-site ionosonde, and are then correc
         >The Syowa South HF radar is located in Antarctica (69.00 S, 39.58 E) and looks over a section of ionosphere poleward (southward) of 70 deg S that includes central Antarctica. It has operated since 1995. The facility is part of the SuperDARN network of HF radars that extends from western North America to Scandinavia in the Northern hemisphere and covers much of Antarctica in the Southern hemisphere. The SuperDARN radar for the most direct 2-D merging of Syowa velocity data is located at SANAE (South African National Antarctic Expedition), Antarctica.
 
 The radar forms and steers its beam by the phasing of transmissions from 16 elements in a linear antenna array. A second 4-element array provide the capability to measure elevation angle. The basic radar operation consists of the following steps: i) selection of a beam position (0-15) ii) search for the quietest 5-kHz channel about the assigned transmitting frequency (8-20 MHz) iii) repeated transmission of a multi-pulse sequence over the selected integration period and reception of backscattered signal with gating in range (1-70) iv) calculation of the auto-correlation functions (ACFs). These operations are usually carried out in sequence for the 16 beam positions, which collectively constitute 1 scan. The beam integration period is typically 6 or 7 sec, and the scan repeat time is 96 sec or 120 sec. Within a scan, beam 0 corresponds to the most westward beam position and beam 15 to the most eastward. The azimuth sector scanned is approximately 50 deg wide and is centered on 159 deg E of N, or about 52 degrees west of the general scan position of Syowa East. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:syf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:syf</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_830_7001">
@@ -6350,8 +6350,8 @@ The data can be used under the 'Rules of the Road' - ie, informing us at an earl
         >IST</dc:title>
         <dc:identifier
         >53</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ist</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ist</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_53_9801">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_110"/>
@@ -6671,8 +6671,8 @@ In some of the data files the zenith observations were used as a zero reference 
         </vsto:hasInstrumentOperatingMode>
         <dc:title
         >AFP</dc:title>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:afp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:afp</rdfs:seeAlso>
       </vsto:FabryPerot>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -6687,8 +6687,8 @@ Hydroxyl (6-2) band rotational temperatures are derived using Langhoff et al. (1
 The spectrophotometer has a 6 degree field-of-view (fov) that was aligned 30-degrees above the horizon in a direction +130 E from Davis away from auroral precipitation in 1990 (Greet et al., 1998). An order separating filter was not used in 1990. Starting in 1994, the optical axis was aligned in the zenith, with a resultant area of about 8 km x 8 km at 87 km. In practice the field of view is defined by the diffraction grating. The diffraction grating rotates about the vertical axis as it scans, so that the area of the grating directly viewing the sky decreases with wavelength (when the grating is at vertical the fov is zero). Thus the fov corresponding to the grating vertical axis varies with grating rotation angle and consequently with wavelength. The instrument is aligned towards the SE (+130 E), but rotates about the vertical as the spectrum is sampled, so these observations are considered to be in the vertical. </rdfs:comment>
         <dc:identifier
         >3010</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dvs</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dvs</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_3010_17001">
@@ -6843,8 +6843,8 @@ The spectrophotometer has a 6 degree field-of-view (fov) that was aligned 30-deg
             >11_1850</dc:identifier>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:jro</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:jro</rdfs:seeAlso>
       </vsto:BiStaticRadar>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -6898,8 +6898,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
         >825</dc:identifier>
         <dc:description
         >SANAE Antarctica HF Radar</dc:description>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:san</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:san</rdfs:seeAlso>
       </vsto:HFRadar>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -6930,8 +6930,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_935"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:cof</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:cof</rdfs:seeAlso>
         <dc:title
         >COF</dc:title>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
@@ -7138,8 +7138,8 @@ The phases are in mean local solar time (SLT). There is 1 hour between SLT and U
         >The Sondre Stromfjord Fabry Perot interferometer, operated by the Space Physics Research Laboratory, Department of Atmospheric, Oceanic and Space Sciences of the University of Michigan is located at latitude 66.99N and longitude 50.95W. The invariant latitude is 74 degrees, the inclination of the magnetic field is 80 degrees and the declination of the field is -39 degrees (39 degrees to the west). Midnight local solar time at the site occurs at 03:24 UT, while midnight magnetic local time is 01:57 UT at the equinoxes. Magnetic midnight varies with season, being 15 minutes earlier at the winter solstice and 15 minutes later at the summer solstice compared to the equinox value.
 
 Currently, the interferometer observes the line profiles of the forbidden emissions OI (557.7nm) and OI (630.0nm). Most of the data in the CEDAR Database are 630.0nm (code 7001), with additional 557.7nm (code 7002) data starting in 2002. The filter wheel was changed in 2002, resulting in brighter relative emissions. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sfp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sfp</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_5480_7002">
             <vsto:hasMeasuredParameter>
@@ -7249,8 +7249,8 @@ Currently, the interferometer observes the line profiles of the forbidden emissi
         >A near infrared (NIR) BOMEM MB160 Michelson interferometer (MI) has operated at South Pole Station (90.00S, 2835 m) in Antarctica since January 1992.
 
 The MI scans the dark sky NIR airglow emissions between ~5000-10000 cm-1. A periscope directs the airglow into the MI sequentially from three locations at an elevation angle of 25 deg at azimuth angles of 0 (0 E), 120 (120 E), and 240 (240 E) deg. The periscope dwells at each position for about 4-15 min. Airglow hydroxyl Meinel (OH-M) band emissions peak at 87 km and are located between about 83 and 89 km for an elevation angle of 25 deg, the 87 km peak is located at a latitude spacing of 1.6 degrees, or at 88.4 S. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:spm</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:spm</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_5700_17031">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_812"/>
@@ -7360,8 +7360,8 @@ The MI scans the dark sky NIR airglow emissions between ~5000-10000 cm-1. A peri
 
 Vostok is located in the polar cap at a high magnetic latitude. In 1978, the magnetic field at the surface was about 60950 nT, with an inclination angle of -77.682 degrees, a declination angle of -11.835 degrees, and an apex magnetic location of (-83.30, 53.56). In 2001, the magnetic field at the surface was about 59470 nT, with an inclination angle of -76.807 degrees, a declination angle of -12.019 degrees, and an apex magnetic location of (-83.31, 55.11). The apex magetic location of -83.3 is very close to the corrected geomagnetic (cgm) location of -83.4 cgmlat used for Vostok. </rdfs:comment>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pcv</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pcv</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_220_17001">
             <dc:identifier
@@ -7423,8 +7423,8 @@ Vostok is located in the polar cap at a high magnetic latitude. In 1978, the mag
     </vsto:servesDataFor>
     <vsto:servesDataFor>
       <vsto:HFRadar rdf:ID="cedar_instrument_835">
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:kgf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:kgf</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The Kerguelen Island HF radar is located in the southern Indian Ocean (49.35 deg S, 70.28 deg E; 58.9 mag S) and looks poleward. It has operated since 2000. The facility is part of the SuperDARN network of HF radars that extends from Alaska to Scandinavia in the Northern hemisphere and covers much of Antarctica in the Southern hemisphere. The SuperDARN radar for the most direct 2-D merging of SANAE velocity data is located at Syowa-East station.
 
@@ -7537,8 +7537,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >A Fabry Perot Interferometer is operated by the British Antarctic Survey at Halley, Antarctica. The station is sited on a floating ice shelf that drifts westward at around 800 m per year, requiring a new station to be built further to the east about every 10 years or so. The geographic coordinates are 75.5 deg S, 26.6 deg W, and the invariant geomagnetic coordinates are 61.5 deg S, 28.9 deg E. The magnetic inclination is 64 deg and magnetic north is 2 deg west of geographic north. The mean local time is 1 hour and 46 minutes (-26.6/15.) before Universal Time. The station was closed in 1998.</rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:hfp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:hfp</rdfs:seeAlso>
         <dc:identifier
         >5020</dc:identifier>
       </vsto:FabryPerot>
@@ -7597,8 +7597,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ahf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ahf</rdfs:seeAlso>
         <dc:title
         >AHF</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -7648,7 +7648,7 @@ For most of the DMSP orbits on a given day, the auroral oval is crossed twice in
 A computer algorithm was written to select the boundaries imitating the rules for hand selection with a quality flag of: 'best', 'good', 'not good'. Only those flagged as 'best' are released. Determination of the quality depends on a variety of factors. Generally,the clearest boundaries occur premidnight, that is, on the evening side, but not prior to 17 MLT. The next best are on the dawn side. Here, however, the flux levels are decreasing and the boundaries are not sharp. The worst boundaries are on the dayside, and near midnight when the oval is cut obliquely. Therefore, the preponderance of boundaries with the 'best' flag are on the evening side. Only 1/3 of the total are 'best' boundaries.
 
 The equivalent equatorward boundary determined for 0 MLT is always defined positive, regardless of the hemisphere of the satellite. These data are also available as yearly files from the contact persons. The ftp and web sites at AFRL have been disconnected. Publically available plots from 1983 are at /instruments/eqb.html.</rdfs:comment>
-        <vsto:reference xml:lang="en">http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eqb</vsto:reference>
+        <rdfs:seeAlso xml:lang="en">http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eqb</rdfs:seeAlso>
       </vsto:SpaceCraft>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -7681,8 +7681,8 @@ There are 4 areas in the summary plots. There are image plots as a function of h
         >Saint Santin: Montpazier receiver</dc:description>
         <dc:title
         >STS43</dc:title>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sts</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sts</rdfs:seeAlso>
       </vsto:IncoherentScatterRadar>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -8356,8 +8356,8 @@ Alt(km)          145     182     219     256     &gt; 293.
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_3504"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aro</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aro</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_20_30001">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_1220"/>
@@ -10159,8 +10159,8 @@ Alt(km)          145     182     219     256     &gt; 293.
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_3909"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_72_8000">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_505"/>
@@ -11712,8 +11712,8 @@ Alt(km)          145     182     219     256     &gt; 293.
     </vsto:servesDataFor>
     <vsto:servesDataFor>
       <vsto:Model rdf:ID="cedar_instrument_310">
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:gcm</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:gcm</rdfs:seeAlso>
         <dc:identifier
         >310</dc:identifier>
         <dc:description
@@ -12200,8 +12200,8 @@ The tidal fields for the neutral temperature and neutral zonal and meridional wi
 The 4 beams are at an elevation angle of 70 degrees pointing towards magnetic north, east, south and west, assuming a declination angle of -5 degrees. The inclination angle is about 48 degrees, and the corrected magneitc latitude of the MU radar is about 25 degrees.
 
 The initial range resolution of the velocities is 38 km. Velocities are averaged between 220 and 455 km, where the altitude of the measurement is defined to be 338, the midpoint of the 235 km range. A running 3-hour average of the ACF is computed as well as the height average before the line of sight (los) ion drift velocity is computed, so there are no error bars. The UT time is the midpoint of the 45 minutes of the middle hour. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mui</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mui</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_25_17000">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_1270"/>
@@ -12323,8 +12323,8 @@ The initial range resolution of the velocities is 38 km. Velocities are averaged
     <vsto:servesDataFor>
       <vsto:FabryPerot rdf:ID="cedar_instrument_5540">
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:tfp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:tfp</rdfs:seeAlso>
         <dc:identifier
         >5540</dc:identifier>
         <vsto:hasInstrumentOperatingMode>
@@ -12652,8 +12652,8 @@ Further details of the procedure are in the references, in the generic kindat ca
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_188"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:kha</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:kha</rdfs:seeAlso>
         <dc:description
         >Kitt Pk H-alpha Fabry-Perot</dc:description>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
@@ -12717,8 +12717,8 @@ Further details of the procedure are in the references, in the generic kindat ca
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_936"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sbf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sbf</rdfs:seeAlso>
         <dc:title
         >SBF</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -12734,8 +12734,8 @@ Further details of the procedure are in the references, in the generic kindat ca
       <vsto:FabryPerot rdf:ID="cedar_instrument_5240">
         <dc:identifier
         >5240</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:fpf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:fpf</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The dispersing elements of the spectrometers are air-spaced, 14 cm diameter effective clear-aperture Fabry-Perot interferometers, which are self-aligning and self-stabilizing (Hernandez and Mills, 1973). The instruments were operated at the optimum point for kinetic temperature determinations (Hernandez, 1979; 1988).
 
@@ -12863,8 +12863,8 @@ The spectrometers observed the night-sky at the 4 cardinal directions at 20-degr
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_54"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:cfp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:cfp</rdfs:seeAlso>
         <dc:identifier
         >5460</dc:identifier>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
@@ -12884,8 +12884,8 @@ The intensities are relative, (Code 2505) but are approximately within 25% of th
       <vsto:Spectrometer rdf:ID="cedar_instrument_3320">
         <dc:identifier
         >3320</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:wup</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:wup</rdfs:seeAlso>
         <dc:description
         >Wuppertal Germany OH Spectrometer</dc:description>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
@@ -13093,8 +13093,8 @@ The relative error of nightly mean temperature values is estimated to be 1-2 K. 
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <dc:description
         >Christmas Island ST (MEDAC) Radar</dc:description>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:cia</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:cia</rdfs:seeAlso>
         <dc:title
         >CIA</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -13111,8 +13111,8 @@ The relative error of nightly mean temperature values is estimated to be 1-2 K. 
         >The Syowa East HF radar is located in Antarctica (69.00 deg S, 39.58 deg E) and looks over a section of ionosphere poleward of 70 deg S that includes the east Antarctica ice cap and the southern ocean. It has operated since 1997. The facility is part of the SuperDARN network of HF radars that extends from Alaska to Scandinavia in the Northern hemisphere and covers much of Antarctica in the Southern hemisphere. The SuperDARN radar for the most direct 2-D merging of Syowa velocity data is located at Kerguelen.
 
 The radar forms and steers its beam by the phasing of transmissions from 16 elements in a linear antenna array. A second 4-element array provide the capability to measure elevation angle. The basic radar operation consists of the following steps: i) selection of a beam position (0-15) ii) search for the quietest 5-kHz channel about the assigned transmitting frequency (8-20 MHz) iii) repeated transmission of a multi-pulse sequence over the selected integration period and reception of backscattered signal with gating in range (1-70) iv) calculation of the auto-correlation functions (ACFs). These operations are usually carried out in sequence for the 16 beam positions, which collectively constitute 1 scan. The beam integration period is usually 7 sec, and the scan repeat time is then 120 sec (2 min). Within a scan, beam 0 corresponds to the most westward beam position and beam 15 to the most eastward. The azimuth sector scanned is approximately 50 deg wide and is centered on 107.0 deg E of N, or about 52 degrees east of the look direction for Syowa South. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sye</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sye</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <dc:title
         >SYE</dc:title>
@@ -13165,8 +13165,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
 
 The instrument measures the nightglow hydroxyl [OH]. The [OH] emission layer is centered near 87 km with a thickness of about 8 km. The center of the layer can vary between about 86 and 89 km, giving an error bar in the altitude of about +/6 km considering the thickness also. The rotational temperatures reflect the neutral temperatures in this altitude region. The measured parameters are the hydroxyl Meinel band rotational temperature in Kelvin and the hydroxyl Meinel integrated band radiance in kR and in log10(R).</rdfs:comment>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:stm</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:stm</rdfs:seeAlso>
         <dc:title
         >STM</dc:title>
         <dc:identifier
@@ -13231,8 +13231,8 @@ The instrument measures the nightglow hydroxyl [OH]. The [OH] emission layer is 
     <vsto:servesDataFor>
       <vsto:FabryPerot rdf:ID="cedar_instrument_5465">
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pkf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pkf</rdfs:seeAlso>
         <dc:title
         >PKF</dc:title>
         <vsto:hasInstrumentOperatingMode>
@@ -13341,8 +13341,8 @@ The instrument is based on a 100-mm aperture capacitance-stabilized Fabry-Perot 
     </vsto:servesDataFor>
     <vsto:servesDataFor>
       <vsto:HFRadar rdf:ID="cedar_instrument_910">
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:whf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:whf</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_910_7001">
             <dc:identifier
@@ -13400,8 +13400,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
         >Ascension Island Meteor RADAR</dc:description>
         <dc:identifier
         >1539</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The Ascension Island (7.96 S, 14.38 W; alt 170 m) 43.50 MHz meteor radar has been in operation since August 1999. On day 359 of 2001 at 89 km altitude, the apex magnetic coordinates were (-19.6, 55.0) degrees. The magnetic inclination and declination angles were -39.3 deg and -16.8 deg. The magnetic local time at 0 Universal Time (UT) is about 2235 MLT. The solar local time (SLT) is UT minus 58 minutes (14.38/15=0.959).</rdfs:comment>
@@ -15518,8 +15518,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_121"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:son</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:son</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_80_15615">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_1020"/>
@@ -15897,8 +15897,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
             >120_30021</dc:identifier>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:imf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:imf</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The CEDAR Database contains hourly Interplanetary Magnetic Field (IMF) and solar plasma data from various satellites from 27 November 1963 to 19 December 1999. One minute IMF data for World Day campaign periods are available from 13 April 1983 to 19 January 1988. Some data sources are:
 
@@ -16084,8 +16084,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
         >Saint Santin: Mende receiver</dc:description>
         <dc:identifier
         >42</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sts</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sts</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The incoherent scatter transmitter station at St. Santin, France (44.6N, 2.2E) operated between 1963 and 1987. The CEDAR Data Base holds all the data taken from 1966 until the end. Up until June 1973 and after July of 1986, the only receiver station operating was located at Nancay (47.4N, 2.2E). Between 1973 and 1986, 2 other receivers also operated at Montpazier (44.7N, 0.8E) and at Mende (44.5N, 3.45E).
 
@@ -16118,8 +16118,8 @@ There are 4 areas in the summary plots. There are image plots as a function of h
         >RBM</dc:title>
         <dc:identifier
         >5950</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:rbm</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:rbm</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >A near infrared (NIR) BOMEM MB160 Michelson interferometer (MI) has operated at Resolute Bay (74.68 N, 94.90 W), 1 m above mean sea level in Canada since September, 1996.
 
@@ -16169,8 +16169,8 @@ The MI scans the dark sky NIR airglow emissions between ~5000-10000 cm-1. The ai
 Currently, the interferometer observes the line profile of the forbidden emission OI (5577 A) and OH (8920 A). The geophysical parameters obtained from the data reduction are the gas kinetic temperature of the emitting region from the natural width of the sky profile, the line of sight wind from the Doppler shift of the sky profile, and the surface brightness of the emission line. OI (5577 A) nightglow emission is generally believed to issue from the altitude range 85 to 300 km, with the major contribution originating from a narrow height interval roughly 10 to 15 km broad centered at 97 km. Similarly, the Meinel OH emission also issues from a broad altitudinal range though centered at a lower altitude. Thus, it is difficult to assign a unique altitude to each ground based OI (5577 A) and OH (8920 A) interferometer measurement. If no other information is available, we generally ascribe 97 km as the altitude of OI (5577 A) emission and 86 km for the OH emission.
 
 Line of sight winds derived from the observed shift of the emission line from a zero reference position requires the determination of a zero wind. The reference zero wind is taken to be the average of an entire nights vertical wind data. Generally, the four cardinal directions are also sampled as well as the vertical. There is no exclusion of any data in the CEDAR Data Base, so cloudy night fits are also included. The cloud cover (code 440) measured by the Detroit Metro airport meteorological station is given in octas of the sky covered. Values range from 0 (clear) to 9 (overcast). In the summary plots, wind measurements were not plotted unless the cloud cover was 0-3. Temperatures and relative emission measurements were not plotted unless the cloud cover was 0-6.</rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pfp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pfp</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_5300_7003">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_1410"/>
@@ -16287,8 +16287,8 @@ The integration time for these data is 12 days, which means that there is an ove
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_935"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:maf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:maf</rdfs:seeAlso>
         <dc:description
         >Mawson Antarctica MF Radar</dc:description>
       </vsto:MFRadar>
@@ -16299,8 +16299,8 @@ The integration time for these data is 12 days, which means that there is an ove
         >The Pykkvibaer HF radar is located in western Iceland (63.77 deg N, -20.54 deg E) and looks to the east over a section of ionosphere that includes the Greenland sea and Svaalbard. It has operated since 1995. The facility is part of the SuperDARN network of HF radars that extends from western North America to Scandinavia in the Northern hemisphere and covers much of Antarctica in the Southern hemisphere. The SuperDARN radar for the most direct 2-D merging of Pykkvibaer velocity data is located at Hankasalmi, Finland.
 
 The radar forms and steers its beam by the phasing of transmissions from 16 elements in a linear antenna array. A second 4-element array provides the capability to measure elevation angle. The basic radar operation consists of the following steps: i) selection of a beam position (0-15), ii) search for the quietest 5-kHz channel about the assigned transmitting frequency (8-20 MHz), iii) repeated transmission of a multi-pulse sequence over the selected integration period and reception of backscattered signal with gating in range (1-70), and iv) calculation of the auto-correlation functions (ACFs). These operations are usually carried out in sequence for the 16 beam positions, which collectively constitute 1 scan. The beam integration period is typically 6 or 7 sec, and the scan repeat time is 96 sec or 120 sec. Within a scan, beam 0 corresponds to the most westward beam position and beam 15 to the most eastward. The azimuth sector scanned is eastward approximately 50 deg wide and is centered on 30 deg E of N. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ehf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ehf</rdfs:seeAlso>
         <dc:title
         >EHF</dc:title>
         <dc:description
@@ -16357,16 +16357,16 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
         >Polar Cap Geometric Index: Thule</dc:description>
         <dc:identifier
         >221</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pcv</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pcv</rdfs:seeAlso>
       </vsto:GroundBasedIndices>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
       <vsto:MeteorWindRadar rdf:ID="cedar_instrument_1620">
         <dc:identifier
         >1620</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dum</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dum</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_1620_17011">
             <dc:description
@@ -16524,8 +16524,8 @@ Significant results are achieved by averaging over 4 days. These are the 12 mont
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_946"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:adf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:adf</rdfs:seeAlso>
         <dc:description
         >Adelaide Australia MF Radar</dc:description>
         <vsto:hasInstrumentOperatingMode>
@@ -16618,8 +16618,8 @@ The height coverage is 50-98 km during the day and 70-98 km during the night, at
       <vsto:MFRadar rdf:ID="cedar_instrument_1230">
         <dc:description
         >Christchurch New Zealand MF Radar</dc:description>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ccf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ccf</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The Christchurch MF radar (43.83 S, 172.68 E) in New Zealand is operated by the Physics Department of the University of Canterbury, Christchurch, New Zealand. It uses the partial-reflection, spaced antenna method (Fraser, 1984) and has contributed to mean wind and tidal studies (Fraser, 1968; Fraser 1989; Fraser et al 1989; Manson et al., 1989, 1990, 1991). The mean solar local time (SLT) is about 11 hours and 31 minutes ahead of Universal Time (UT) (i.e., 172.68 E / 15 deg/hr = 11.51 hours = 11 hrs 31 min). The phases are in SLT.</rdfs:comment>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
@@ -16657,8 +16657,8 @@ The height coverage is 50-98 km during the day and 70-98 km during the night, at
       <vsto:IncoherentScatterRadar rdf:ID="cedar_instrument_61">
         <dc:title
         >PFR</dc:title>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu</rdfs:seeAlso>
         <dc:identifier
         >61</dc:identifier>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -16672,8 +16672,8 @@ The height coverage is 50-98 km during the day and 70-98 km during the night, at
       <vsto:RayleighLidar rdf:ID="cedar_instrument_6330">
         <dc:description
         >USU ALO Rayleigh LIDAR</dc:description>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:usl</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:usl</rdfs:seeAlso>
         <dc:identifier
         >6330</dc:identifier>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
@@ -16769,8 +16769,8 @@ The lidar operates at a wavelength of 532 nm up to about 500 km, but collects me
     </vsto:servesDataFor>
     <vsto:servesDataFor>
       <vsto:MFRadar rdf:ID="cedar_instrument_1390">
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:trf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:trf</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The Tromso MF radar is located in Norway (70 N, 19 E). The mean solar local time (SLT) is Universal Time (UT) plus 1 hour and 18 minutes. (SLT = UT + 1:18). The phases are in SLT and the measurement days start at 0 UT. The Tromso MF radar data is obtained and analyzed by the Saskatoon MF radar scientists, and has provided considerable mean winds (Manson et al., 1990a and 1991a) and tidal data (Manson et al, 1989). LTCS-1 and LTCS-2 are described for all middle atmosphere radars in Manson et al. (1990b, 1991b). MF radars use the spaced antenna method. Harmonic analysis is applied to hourly mean winds (weighted by data yield per hour) at individual heights to obtain tides for the prime LTCS or stated intervals. Typical standard deviations for means, 12-hour and 24-hour tides are in the above LTCS papers. Tides of the month for Tromso are means of 4-day fits (the amplitudes are arithmetic means). Data up to 99 km are real heights --- above, they are from the E-region, a layer about 5 km centered near 102 km.</rdfs:comment>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
@@ -17103,8 +17103,8 @@ The ion composition changes from mostly O2+ and NO+ at lower altitudes, to mostl
         </vsto:hasInstrumentOperatingMode>
         <dc:title
         >MLH30</dc:title>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mlh</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mlh</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_30_13210">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_1420"/>
@@ -17378,8 +17378,8 @@ The MF operating frequency is 1.95550 MHz, with a peak transmitter power of 50 k
 Data sampling is done every 2 km usually between 60-98 km for Yamagawa (60-108 km for Wakkanai, 44-108 km for Poker Flat). The height range of wind velocity data is variable accoding to atmospheric and radio conditions and is usually about 70-90 km at Yamagawa and Wakkanai during the day and 80-90 km at night (60-90 km/70-90 km for Poker Flat for day/night conditions).
 
 The pulse width is 48 microsec (27 microsec before September 1996), giving a height resolution of approx. 7.2 km (4.1 km) assuming a simple rectangular wave pulse. For the 48-microsec case, the range of heights illuminated by the wave pulse = velocity of light * pulse-width / 2 = 3x10**8 m/s * 48x10-6s / 2 = 7.2 km. However, neutral velocities are given every 2 km. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:yam</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:yam</rdfs:seeAlso>
         <dc:title
         >YAM</dc:title>
         <dc:description
@@ -17388,8 +17388,8 @@ The pulse width is 48 microsec (27 microsec before September 1996), giving a hei
     </vsto:servesDataFor>
     <vsto:servesDataFor>
       <vsto:MFRadar rdf:ID="cedar_instrument_1310">
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:wak</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:wak</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The Wakkanai, Japan (45.36N, 141.81E; alt ~10 m) 1.9585 MHz MF radar has been in operation since 1996. On day 359 of 2001 at 89 km altitude, the apex magnetic coordinates were (38.9,-146.6) degrees. The magnetic inclination and declination angles were 59.8 deg and -9.6 deg. The magnetic local time at 0 Universal Time (UT) is about 0909 MLT. The solar local time (SLT) is UT plus 9 hours and 27 minutes (141.81/15.=9.454).
 
@@ -18430,8 +18430,8 @@ The pulse width is 48 microsec (27 microsec before September 1996), giving a hei
         </vsto:hasInstrumentOperatingMode>
         <dc:identifier
         >73</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_73_6402">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_3904"/>
@@ -19722,8 +19722,8 @@ The pulse width is 48 microsec (27 microsec before September 1996), giving a hei
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_660"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_71_6312">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_3822"/>
@@ -22179,8 +22179,8 @@ The pulse width is 48 microsec (27 microsec before September 1996), giving a hei
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_414"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:csl</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:csl</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_6320_17100">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_21"/>
@@ -22280,8 +22280,8 @@ The pulse width is 48 microsec (27 microsec before September 1996), giving a hei
         </vsto:hasInstrumentOperatingMode>
         <dc:identifier
         >845</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:khf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:khf</rdfs:seeAlso>
         <dc:description
         >Kapuskasing HF Radar</dc:description>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -22299,8 +22299,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >These auroral and airglow data are on video tape at NCAR. The images are unprocessed raw data in black-and-white and then in false color. Corrections for average background and vignetting are possible using the false color images. If the user wants more in-depth analysis for a particular event or data set, or data beyond 1994, contact Michael Mendillo (mendillo@bu.edu). A web page is at http://www.bu.edu/csp/imaging_science. The presence of aurora is indicated by an '*' and the presence of aurora and SAR arcs by '**'. The Mobile Ionospheric Observatory</rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:Millstone_Hill_Imager</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:Millstone_Hill_Imager</rdfs:seeAlso>
         <dc:description
         >Millstone Hill Imager</dc:description>
       </vsto:AirglowImager>
@@ -22315,8 +22315,8 @@ Currently, the interferometer observes the line profile of the forbidden emissio
 Line of sight winds derived from the observed shift of the emission line from a zero reference position requires the determination of a zero wind. The reference zero wind is taken to be the average of an entire nights vertical wind data. Generally, the four cardinal directions are also sampled as well as the vertical. There is no exclusion of any data in the CEDAR Data Base, so cloudy night fits are also included. The cloud cover (code 440) measured by the Watson Lake meteorological station is given in octas of the sky covered. Values range from 0 (clear) to 9 (overcast).
 
 Summary plots of the relative emission, neutral temeprature and vertical wind are plotted with error bars for the vertical look direction. For look directions in opposite cardinal directions, horizontal winds are plotted without error bars. For periods where there are plots of the vertical wind, but not of the horizontal wind, then the look directions are not cardinal. In the summary plots, wind measurements were not plotted unless the cloud cover was 0-3. Temperatures and relative emission measurements were not plotted unless the cloud cover was 0-6. For the period of data in the CEDAR Data Base, the cloud cover was 0-3 38% of the time, and 0-6 48% of the time.</rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:wfp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:wfp</rdfs:seeAlso>
         <dc:title
         >WFP</dc:title>
         <vsto:hasInstrumentOperatingMode>
@@ -22441,8 +22441,8 @@ Summary plots of the relative emission, neutral temeprature and vertical wind ar
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_2506"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mjf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mjf</rdfs:seeAlso>
         <dc:title
         >MJF</dc:title>
         <dc:description
@@ -22539,8 +22539,8 @@ Summary plots of the relative emission, neutral temeprature and vertical wind ar
         >The Saskatoon MF radar is located in the province of Saskatchewan in Canada (52N, 107W). The solar local time (SLT) is Universal Time (UT) minus 7 hours and 10 minutes. (SLT = UT - 7:10). The phases are in SLT and the measurement days start at 0 UT. The Saskatoon MF radar has provided considerable mean winds (Manson et al., 1990a and 1991a) and tidal data (Manson et al, 1989) since 1979. LTCS-1 and LTCS-2 are described for all middle atmosphere radars in Manson et al (1990b,1991b). MF radars use the "spaced antenna" method. Harmonic analysis is applied to hourly mean winds (weighted by data yield per hour) at individual heights to obtain tides for the prime LTCS or stated intervals. Typical standard deviations for means, 12-hour and 24-hour tides are in the above LTCS papers. Tides of the month for Saskatoon are means of 4-day fits (the amplitudes are arithmetic means). Data up to 99 km are real heights --- above, they are from the E-region, a layer about 5 km centered near 102 km.
 
 These are the analyzed data on the neutral winds in the mesosphere and lower thermosphere during or including the LTCS-1 period, 21-25 September 1987. This condensed format is consistent with the analyzed data from other sites as well, and is prepared in order to facilitate research work. However, users need to inform the data suppliers that they are using the data in case of updates or changes, and to insure that the data are being used and interpreted properly.</rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:saf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:saf</rdfs:seeAlso>
         <dc:title
         >SAF</dc:title>
       </vsto:MFRadar>
@@ -22575,8 +22575,8 @@ These are the analyzed data on the neutral winds in the mesosphere and lower the
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_945"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pla</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pla</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The Platteville, CO ST (MEDAC) radar is located at (40 N, 105 W). The MEDAC (Meteor Echo Detection And Collection) sytem added to the ST (STratospheric) radar makes observations of winds measured from the backscatter off meteor trails. The system is described in Avery et al. (1990). The original observations are described in local time, which is 7 hours later than UT. (Mountain Standard Time = UT - 7 hours.) The mean solar local time (SLT) is about 7 hours after UT. (i.e., -105 E/15 deg/hr = -7.00 hours). Therefore, no adjustment was made to the phase, since the local time is very close to the solar local time.
 
@@ -22628,8 +22628,8 @@ These are the analyzed data on the neutral winds in the mesosphere and lower the
         </vsto:hasInstrumentOperatingMode>
         <dc:identifier
         >210</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:gpi</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:gpi</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The CEDAR Database contains the 3-h Kp and ap indices, daily Ap, sunspot numbers and 10.7 cm solar flux values, and 81 day average 10.7 cm solar flux averages from 1 January 1960 to 30 April 2000. The 81 day average 10.7 cm solar flux is calculated, but our source for the other indices is the World Data Center in Boulder where one can get:
 
@@ -22654,8 +22654,8 @@ The Digisonde generally operates in a 15 minute cycle mode, where the first 2-3 
 Digisondes transmit HF radio waves illuminating a large ionospheric area of several hundred kilomaters diameter over the sounder. Radio waves are sent up and reflected off orthogonal surfaces. Each reflection point is considered to be a separate source and has associated with it a line- of-sight (los) Doppler velocity measurement. Making the assumption that the main contribution to the measured Doppler shifts results from the uniform horizontal bulk motion of the plasma, the los velocity and source location are used to calculate the velocity vector by least squares fit.
 
 The drift mode operated at Qaanaaq during 1989 resulted in up to a maximum of 64 sources in a single integration period of 5 seconds. One minute data is obtained where the error bar is the average of the standard deviations from 12 5-second integrations, while the value of each velocity component is the median from a further velocity distribution found using all the data points in the entire one minute period. The 1 minute results were taken and reported every 15 minutes. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:qad</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:qad</rdfs:seeAlso>
         <dc:description
         >Qaanaaq Greenland Digisonde</dc:description>
         <vsto:hasInstrumentOperatingMode>
@@ -22795,8 +22795,8 @@ The drift mode operated at Qaanaaq during 1989 resulted in up to a maximum of 64
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_4104"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:p4p</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:p4p</rdfs:seeAlso>
         <dc:identifier
         >4470</dc:identifier>
         <vsto:hasInstrumentOperatingMode>
@@ -22901,8 +22901,8 @@ The 4 channels correspond to:
         >A near infrared (NIR) BOMEM MB160 Michelson interferometer (MI) has operated at Eureka (80.22 N, 86.18 W), Canada, at 139 m above mean sea level since October, 1992.
 
 The MI scans the dark sky NIR airglow emissions between ~5000-10000 cm-1. A periscope directs the airglow into the MI sequentially from four locations: overhead, and at an elevation angle of 25 deg at azimuth angles of 0 (geog N), 120, and 240 deg. The periscope dwells at each of the positions for about 8 min, averaging several scans. Airglow hydroxyl Meinel (OH-M) band emissions peak at 87 km and are located between about 83 and 89 km. For an elevation angle of 25 deg, the 87 km peak is located at a latitude spacing of 1.61 degrees, or about 179 km away. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eum</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eum</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
       </vsto:MichelsonInterferometer>
     </vsto:servesDataFor>
@@ -22953,8 +22953,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_496"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:hhf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:hhf</rdfs:seeAlso>
         <dc:description
         >Halley Antarctica HF Radar</dc:description>
         <dc:title
@@ -23245,8 +23245,8 @@ In addition, several criterea involving the least squares fit, as well as relati
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_3571"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:cht</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:cht</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_50_15013">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_3572"/>
@@ -23468,8 +23468,8 @@ In addition, several criterea involving the least squares fit, as well as relati
         >A near infrared (NIR) BOMEM MB160 Michelson interferometer (MI) has operated at Sondrestrom Fjord (66.99 N, 50.95 W), Greenland, 180 m above mean sea level since September, 1990.
 
 The MI scans the dark sky NIR airglow emissions between ~5000-10000 cm-1. A periscope directs the airglow into the MI sequentially from three locations at an elevation angle of 25 deg at azimuth angles of 0 (geog N), 120, and 240 deg. The periscope dwells at each position for about 15 min. Airglow hydroxyl Meinel (OH-M) band emissions peak at 87 km and are located between about 83 and 89 km. For an elevation angle of 25 deg, the 87 km peak is at a latitude spacing of 1.61 degrees, or about 179 km away. </rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sfm</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sfm</rdfs:seeAlso>
         <dc:title
         >SFM</dc:title>
         <dc:identifier
@@ -23539,8 +23539,8 @@ The MI scans the dark sky NIR airglow emissions between ~5000-10000 cm-1. A peri
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_812"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ikf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ikf</rdfs:seeAlso>
         <dc:description
         >Inuvik NWT Fabry-Perot Interferometer</dc:description>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -23589,8 +23589,8 @@ The MI scans the dark sky NIR airglow emissions between ~5000-10000 cm-1. A peri
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_570"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mlh</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mlh</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_32_3302">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_132"/>
@@ -24166,8 +24166,8 @@ The ion composition changes from mostly O2+ and NO+ at lower altitudes, to mostl
     </vsto:servesDataFor>
     <vsto:servesDataFor>
       <vsto:FabryPerot rdf:ID="cedar_instrument_5140">
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aqf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aqf</rdfs:seeAlso>
         <dc:title
         >AQF</dc:title>
         <dc:identifier
@@ -24343,8 +24343,8 @@ The ion composition changes from mostly O2+ and NO+ at lower altitudes, to mostl
         >PLR</dc:title>
         <dc:identifier
         >1285</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The Platteville 2 MHz MF radar is located in Colorado, USA (40.18N, 104.7W; 1505 m alt), and has been in operation since December 1999, with a data gap from March to July 2000 because of system problems. On day 359 of 2001 at 89 km altitude, the apex magnetic coordinates were (49.3, -39.6) degrees. The magnetic inclination and declination angles were 67.2 deg and 10.0 deg. The magnetic local time at 0000 Universal Time (UT) is about 1617 MLT. The solar local time (SLT) is UT minus 6 hours and 59 minutes (-104.7/15=-6.98).</rdfs:comment>
       </vsto:MFRadar>
@@ -24353,8 +24353,8 @@ The ion composition changes from mostly O2+ and NO+ at lower altitudes, to mostl
       <vsto:HFRadar rdf:ID="cedar_instrument_870">
         <dc:identifier
         >870</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:gbf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:gbf</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_870_7001">
@@ -24463,8 +24463,8 @@ The vertical velocity is defined to be 0 at the surface, but other temperature a
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_952"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:gsw</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:gsw</rdfs:seeAlso>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
       </vsto:Model>
     </vsto:servesDataFor>
@@ -24473,8 +24473,8 @@ The vertical velocity is defined to be 0 at the surface, but other temperature a
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
         <dc:title
         >SAC</dc:title>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://nsosp.nso.edu/</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://nsosp.nso.edu/</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >Sacramento Peak NM Spectrometer</rdfs:comment>
         <dc:description
@@ -24509,8 +24509,8 @@ The vertical velocity is defined to be 0 at the surface, but other temperature a
         <dc:identifier
         >320</dc:identifier>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sdt</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sdt</rdfs:seeAlso>
         <dc:title
         >SDT</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -24561,8 +24561,8 @@ The vertical velocity is defined to be 0 at the surface, but other temperature a
         </vsto:hasInstrumentOperatingMode>
         <dc:description
         >South Pole Fabry-Perot Interfer Spectr</dc:description>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:spf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:spf</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The Fabry-Perot Interferometric Spectrometer at Amundsen-Scott South Pole Station (90.00S) has been operated since 1989 by the Department of Earth and Space Sciences, University of Washington, in cooperation with the Geophysical Institute of the University of Alaska. The instrument is located within 150 feet of the South Pole at 2835 m above mean sea level. The geographic longitude is used to reckon the azimuthal direction of observation, with 0 E corresponding to 0 deg azimuth. The apex magnetic coordinates of South Pole at 250 km height in 1992 were (-74.4, 17.7), with a magnetic declination of -21.37 deg (or 158.63 E toward the compass south pole), an inclination of -74.78 deg, and 0 UT at 2039 MLT. The invariant (apex) South Pole at 250 km height was at (74.2S, 126.0E), and the perpendicular to the magnetic latitude circle pointed to 125.6E. Hernandez et al (1991) used magnetic south towards 120 E, with 0 UT at 2023 MLT. The magnetic grid is useful for ordering the red line observations at about 250 km height, but not for other observations from emissions below 100 km height.</rdfs:comment>
         <dc:title
@@ -24606,8 +24606,8 @@ The MI scans the dark sky NIR airglow emissions between ~5000-10000 cm-1. A peri
         >DBM</dc:title>
         <dc:identifier
         >5720</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dbm</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dbm</rdfs:seeAlso>
         <dc:description
         >Daytona Beach FL, USA Michelson Inter.</dc:description>
       </vsto:MichelsonInterferometer>
@@ -24691,8 +24691,8 @@ The USU MTM is a CCD imager that measures the hydroxyl [OH] Meinel nightglow in 
         <dc:title
         >MTM</dc:title>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mtm</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mtm</rdfs:seeAlso>
       </vsto:Imager>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -24888,10 +24888,10 @@ The USU MTM is a CCD imager that measures the hydroxyl [OH] Meinel nightglow in 
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_415"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uilufe</vsto:reference>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uiluna</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uilufe</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uiluna</rdfs:seeAlso>
         <dc:title
         >UIL</dc:title>
         <vsto:hasInstrumentOperatingMode>
@@ -24957,10 +24957,10 @@ The USU MTM is a CCD imager that measures the hydroxyl [OH] Meinel nightglow in 
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_2561"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uilhna</vsto:reference>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uilana</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uilhna</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uilana</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_6300_17003">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_112"/>
@@ -24989,8 +24989,8 @@ The USU MTM is a CCD imager that measures the hydroxyl [OH] Meinel nightglow in 
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_110"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uil</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:uil</rdfs:seeAlso>
         <dc:description
         >U of Illinois LIDAR</dc:description>
         <dc:identifier
@@ -25036,8 +25036,8 @@ The drift mode resulted in up to a maximum of 64 sources in a single integration
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_-1210"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ssd</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:ssd</rdfs:seeAlso>
       </vsto:IonSonde>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -25089,8 +25089,8 @@ The drift mode resulted in up to a maximum of 64 sources in a single integration
 
 Many of the early observations from 1957-1993 were made by Prof. L. Fishkova and Dr. N. Marcvaladze. After the mid 1970's, they used the Einstein Transition Probabilities from Mies (1974).</rdfs:comment>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aop</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aop</rdfs:seeAlso>
         <dc:title
         >AOP</dc:title>
         <dc:description
@@ -25226,8 +25226,8 @@ Many of the early observations from 1957-1993 were made by Prof. L. Fishkova and
         >Millstone Hill Fabry-Perot</dc:description>
         <vsto:hasLongitude rdf:datatype="http://www.w3.org/2001/XMLSchema#float"
         >-71.45</vsto:hasLongitude>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mfp</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mfp</rdfs:seeAlso>
       </vsto:FabryPerot>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -25237,8 +25237,8 @@ Many of the early observations from 1957-1993 were made by Prof. L. Fishkova and
         >DST</dc:title>
         <dc:description
         >Geophysical indices from NGDC: Dst</dc:description>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dst</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:dst</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The CEDAR Database contains hourly Dst values calculated from lower latitude ground magnetometers between 1 January 1957 and 31 March 2000. Other sources for Dst (1957-present) are:
 
@@ -25334,8 +25334,8 @@ In general, the daytime height range is 105 to 350 km, while the nighttime heigh
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_20"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sts</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:sts</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_40_4205">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_108"/>
@@ -25509,8 +25509,8 @@ In general, the daytime height range is 105 to 350 km, while the nighttime heigh
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The CEDAR Database contains 16-s instegrations of the ion and electron "characteristic energy" and energy flux from NOAA SEM-2 satellites (NOAA-15, NOAA-16, NOAA-17) from June 1998 to December 2004</rdfs:comment>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pfx</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:pfx</rdfs:seeAlso>
         <dc:description
         >Spacecraft Particle Flux</dc:description>
         <vsto:hasInstrumentOperatingMode>
@@ -25664,8 +25664,8 @@ The pulse width is 48 microsec (27 microsec before September 1996), giving a hei
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:rpk</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:rpk</rdfs:seeAlso>
       </vsto:MFRadar>
     </vsto:servesDataFor>
     <vsto:servesDataFor>
@@ -25762,8 +25762,8 @@ The pulse width is 48 microsec (27 microsec before September 1996), giving a hei
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_486"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:kkv</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:kkv</rdfs:seeAlso>
         <dc:title
         >KKV</dc:title>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
@@ -25797,8 +25797,8 @@ The pulse width is 48 microsec (27 microsec before September 1996), giving a hei
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aaf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:aaf</rdfs:seeAlso>
         <dc:title
         >AAF</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
@@ -25824,8 +25824,8 @@ The spectrometer observed the night-sky at the 4 cardinal directions at 20-degre
 
 The radar forms and steers its beam by the phasing of transmissions from 16 elements in a linear antenna array. A second 4-element array provides the capability to measure elevation angle. The basic radar operation consists of the following steps: i) selection of a beam position (0-15), ii) search for the quietest 5-kHz channel about the assigned transmitting frequency (8-20 MHz), iii) repeated transmission of a multi-pulse sequence over the selected integration period and reception of backscattered signal with gating in range (1-70), and iv) calculation of the auto-correlation functions (ACFs). These operations are usually carried out in sequence for the 16 beam positions, which collectively constitute 1 scan. The beam integration period is typically 6 or 7 sec, and the scan repeat time is 96 sec or 120 sec. Within a scan, beam 0 corresponds to the most westward beam position and beam 15 to the most eastward. The azimuth sector scanned is westward approximately 50 deg wide and is centered on -12 deg E of N. </rdfs:comment>
         <vsto:dataServedBy rdf:resource="#cedar_data_archive"/>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:fhf</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:fhf</rdfs:seeAlso>
         <dc:description
         >Hankasalmi Finland HF Radar</dc:description>
         <dc:title
@@ -25876,8 +25876,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
         >RTH</dc:title>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The Rothera, Antarctica (67.57S, 68.12W; ~5 m alt) 1.98 MHz MF radar was in operation 1997-1998, and was reinstalled in 2002. The data are noisy. On day 359 of 2001 at 89 km altitude, the apex magnetic coordinates were (-52.6, 7.6) degrees. The magnetic inclination and declination angles were -59.9 deg and 20.5. deg. The magnetic local time at 0000 Universal Time (UT) is about 1925 MLT. The solar local time (SLT) is UT minus 4 hours and 32 minutes (-68.12/15.=-4.5413).</rdfs:comment>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_1221_17100">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_940"/>
@@ -25939,8 +25939,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
       <vsto:MeteorWindRadar rdf:ID="cedar_instrument_1775">
         <dc:identifier
         >1775</dc:identifier>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:mltr</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_1775_17100">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_42"/>
@@ -26222,8 +26222,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_3930"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:eis</rdfs:seeAlso>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
         >The EISCAT (European Incoherent SCATter) facility in Scandinavia consists of a transimitter/receiver station at Tromso, Norway (69.6N, 19.2E), and receiver stations at Kiruna, Sweden (67.9N, 20.4E) and Sodankyla, Finland (67.4N, 26.6E). The facility has been in operation since 1981, and recently expanded to include a facility at Svalbard, which will have its own web page when data are included in the CEDAR Data Base.
 
@@ -26862,8 +26862,8 @@ The radar forms and steers its beam by the phasing of transmissions from 16 elem
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_520"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:esr</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:esr</rdfs:seeAlso>
         <vsto:hasInstrumentOperatingMode>
           <vsto:InstrumentOperatingMode rdf:ID="cedar_instrument_operating_mode_95_6810">
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_-520"/>
@@ -27158,8 +27158,8 @@ The power profiles are calibrated with an on-site ionosonde, and are then correc
             <vsto:hasMeasuredParameter rdf:resource="#cedar_parameter_-941"/>
           </vsto:InstrumentOperatingMode>
         </vsto:hasInstrumentOperatingMode>
-        <vsto:reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
-        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:atm</vsto:reference>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >http://cedarweb.hao.ucar.edu/wiki/index.php/Instruments:atm</rdfs:seeAlso>
         <dc:title>ATM</dc:title>
         <dc:identifier>1560</dc:identifier>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"

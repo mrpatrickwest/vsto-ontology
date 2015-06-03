@@ -19,6 +19,22 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Domain</rdfs:label>
   </owl:Class>
 
+  <owl:TransitiveProperty rdf:about="hasSubPhysicalDomain">
+    <owl:inverseOf rdf:resource="hasSuperPhysicalDomain"/>
+    <rdfs:range rdf:resource="PhysicalDomain"/>
+    <rdfs:domain rdf:resource="PhysicalDomain"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:TransitiveProperty>
+
+  <owl:ObjectProperty rdf:about="hasSuperPhysicalDomain">
+    <rdfs:domain rdf:resource="PhysicalDomain"/>
+    <rdfs:range rdf:resource="PhysicalDomain"/>
+    <owl:inverseOf>
+      <owl:TransitiveProperty rdf:ID="hasSubPhysicalDomain"/>
+    </owl:inverseOf>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </owl:ObjectProperty>
+
   <owl:Class rdf:ID="SurfaceRegion">
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -49,6 +65,26 @@
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atmosphere Layer</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Planet">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Planet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="AstronomicalObject"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Asteroid">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asteroid</rdfs:label>
+    <rdfs:subClassOf rdf:resource="AstronomicalObject"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Star">
+    <rdfs:subClassOf rdf:resource="AstronomicalObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Star</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="Comet">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comet</rdfs:label>
+    <rdfs:subClassOf rdf:resource="AstronomicalObject"/>
   </owl:Class>
 
   <owl:Class rdf:about="Atmosphere">
@@ -175,6 +211,183 @@
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
+
+<!-- Properties -->
+  <owl:FunctionalProperty rdf:ID="hasMaximumAltitudeInKm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain rdf:resource="AtmosphereLayer"/>
+  </owl:FunctionalProperty>
+
+  <owl:DatatypeProperty rdf:ID="hasMinimumAltitudeInKm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="AtmosphereLayer"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="hasAltitude">
+    <rdfs:domain rdf:resource="StationaryDeployment"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="hasLatitude">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="LatitudeCircle"/>
+          <owl:Class rdf:about="GroundBasedInstrument"/>
+          <owl:Class rdf:about="StationaryDeployment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="hasLongitude">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="LongitudeCircle"/>
+          <owl:Class rdf:about="GroundBasedInstrument"/>
+          <owl:Class rdf:about="StationaryDeployment"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:ID="hasNorthMostLatitude">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="SurfaceRegion"/>
+          <owl:Class rdf:about="GeographicBoundingBox"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-90 &lt;= latutude &lt;= +90</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:DatatypeProperty>
+
+  <owl:FunctionalProperty rdf:ID="hasSouthMostLatitude">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >-90 &lt;= latitude &lt;= +90</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#SurfaceRegion"/>
+          <owl:Class rdf:about="#GeographicBoundingBox"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:FunctionalProperty>
+
+  <owl:DatatypeProperty rdf:ID="hasEastMostLongitude">
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="SurfaceRegion"/>
+          <owl:Class rdf:about="GeographicBoundingBox"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-180 &lt;= lonngitude &lt;= +180</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+
+  <owl:FunctionalProperty rdf:ID="hasWestMostLongitude">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >-180 &lt;= longitude &lt;= +90</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#SurfaceRegion"/>
+          <owl:Class rdf:about="#GeographicBoundingBox"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:FunctionalProperty>
+
+  <owl:Class rdf:ID="GeographicBoundingBox">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geographic Bounding Box</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  </owl:Class>
+
+<!-- Physical State Domain -->
+  <owl:Class rdf:ID="PhysicalDomainState">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Domain State</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A set of one or more related parameters that describe the state of a domain. A physical domain may be associated with more than one state.</rdfs:comment>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</owl:minCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasStateParameter"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:ID="NeutralState">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasStateParameter"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="NeutralParameter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="PhysicalDomainState"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral State</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Set of parameters describing a physical domain that all have electric charge = 0</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:ID="ElectronState">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron State</rdfs:label>
+    <rdfs:subClassOf rdf:resource="PhysicalDomainState"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:ID="ElectronParameter"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasStateParameter"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Set of parameters describing a physical domain that all have electric charge = -1</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="IonState">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Set of parameters describing a physical domain that all have electric charge &gt; 0</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion State</rdfs:label>
+    <rdfs:subClassOf rdf:resource="PhysicalDomainState"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="hasStateParameter"/>
+        </owl:onProperty>
+        <owl:allValuesFrom rdf:resource="CationParameter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="hasStateParameter">
+    <rdfs:domain rdf:resource="PhysicalDomainState"/>
+    <rdfs:range rdf:resource="Parameter"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="hasState">
+    <rdfs:domain rdf:resource="PhysicalDomain"/>
+    <rdfs:range rdf:resource="PhysicalDomainState"/>
+  </owl:ObjectProperty>
 
 </rdf:RDF>
 
