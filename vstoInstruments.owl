@@ -408,18 +408,6 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lyot Filter Instrument</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:about="FilterInstrument">
-    <rdfs:subClassOf rdf:resource="Instrument"/>
-     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filter Instrument</rdfs:label>
-  </owl:Class>
-
-  <owl:Class rdf:ID="BirefringentFilter">
-    <rdfs:subClassOf>
-      <owl:Class rdf:ID="FilterInstrument"/>
-    </rdfs:subClassOf>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birefringent Filter Instrument</rdfs:label>
-  </owl:Class>
-
   <owl:Class rdf:about="LyotFilter">
     <rdfs:subClassOf>
       <owl:Class rdf:about="FilterInstrument"/>

@@ -14,40 +14,40 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xml:base="&vsto;">
 
-  <owl:Class rdf:ID="Emissivity">
+  <owl:Class rdf:about="Emissivity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emissivity</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="Polarization">
+  <owl:Class rdf:about="Polarization">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polarization</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="CloudCover">
+  <owl:Class rdf:about="CloudCover">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cloud Cover</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Emission">
+  <owl:Class rdf:about="Emission">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emission Parameter</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="LineEmission">
+  <owl:Class rdf:about="LineEmission">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Line Emission</rdfs:label>
     <rdfs:subClassOf rdf:resource="Emission"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="RelativeEmission">
+  <owl:Class rdf:about="RelativeEmission">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Relative Emission</rdfs:label>
     <rdfs:subClassOf rdf:resource="Emission"/>
   </owl:Class>
@@ -59,19 +59,19 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="MeanMolecularWeight">
+  <owl:Class rdf:about="MeanMolecularWeight">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mean Molecular Weight</rdfs:label>
     <rdfs:subClassOf rdf:resource="Weight"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="AtomicWeight">
+  <owl:Class rdf:about="AtomicWeight">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Weight"/>
+      <owl:Class rdf:about="Weight"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic Weight</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="MolecularWeight">
+  <owl:Class rdf:about="MolecularWeight">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Weight"/>
     </rdfs:subClassOf>
@@ -85,28 +85,28 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="MagneticVector">
+  <owl:Class rdf:about="MagneticVector">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Vector"/>
+      <owl:Class rdf:about="Vector"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnetic Vector</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="VelocityVector">
+  <owl:Class rdf:about="VelocityVector">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity Vector</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Vector"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectricVector">
+  <owl:Class rdf:about="ElectricVector">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Vector</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Vector"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="VectorComponent">
+  <owl:Class rdf:about="VectorComponent">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Vector"/>
     </rdfs:subClassOf>
@@ -120,7 +120,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="VelocityField">
+  <owl:Class rdf:about="VelocityField">
     <rdfs:subClassOf rdf:resource="VectorField"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity Field</rdfs:label>
   </owl:Class>
@@ -130,31 +130,31 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion Velocity Field</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="ProtonVelocityField">
+  <owl:Class rdf:about="ProtonVelocityField">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proton Velocity Field</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="IonVelocityField"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="NeutralVelocityField">
+  <owl:Class rdf:about="NeutralVelocityField">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral Velocity Field</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="IonVelocityField"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectronVelocityField">
+  <owl:Class rdf:about="ElectronVelocityField">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron Velocity Field</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="IonVelocityField"/>
+      <owl:Class rdf:about="IonVelocityField"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="FieldComponent">
+  <owl:Class rdf:about="FieldComponent">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Field Component</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="VectorField"/>
+      <owl:Class rdf:about="VectorField"/>
     </rdfs:subClassOf>
   </owl:Class>
 
@@ -163,29 +163,29 @@
     <rdfs:subClassOf rdf:resource="FieldComponent"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="CurrentDensityComponent">
+  <owl:Class rdf:about="CurrentDensityComponent">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="ElectroMagneticFieldComponent"/>
+      <owl:Class rdf:about="ElectroMagneticFieldComponent"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Current Density Component</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectricCurrentDensityComponent">
+  <owl:Class rdf:about="ElectricCurrentDensityComponent">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Current Density Component</rdfs:label>
     <rdfs:subClassOf rdf:resource="CurrentDensityComponent"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="MagneticFieldComponent">
+  <owl:Class rdf:about="MagneticFieldComponent">
     <rdfs:subClassOf rdf:resource="ElectroMagneticFieldComponent"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnetic Field Component</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectricFieldComponent">
+  <owl:Class rdf:about="ElectricFieldComponent">
     <rdfs:subClassOf rdf:resource="ElectroMagneticFieldComponent"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Field Component</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="VelocityFieldComponent">
+  <owl:Class rdf:about="VelocityFieldComponent">
     <rdfs:subClassOf rdf:resource="FieldComponent"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Velocity Field Component</rdfs:label>
   </owl:Class>
@@ -195,39 +195,39 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electro Magnetic Field</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="CurrentDensity">
+  <owl:Class rdf:about="CurrentDensity">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="ElectroMagneticField"/>
+      <owl:Class rdf:about="ElectroMagneticField"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Current Density</rdfs:label>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:ID="hasVector">
+  <owl:ObjectProperty rdf:about="hasVector">
     <rdfs:domain rdf:resource="VectorField"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="Vector"/>
   </owl:ObjectProperty>
 
-  <owl:Class rdf:ID="ElectricCurrentDensity">
+  <owl:Class rdf:about="ElectricCurrentDensity">
     <rdfs:subClassOf rdf:resource="CurrentDensity"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Current Density</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="MagneticField">
+  <owl:Class rdf:about="MagneticField">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnetic Field</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="ElectroMagneticField"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectricField">
+  <owl:Class rdf:about="ElectricField">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Field</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="ElectroMagneticField"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectricField">
+  <owl:Class rdf:about="ElectricField">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Field</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="ElectroMagneticField"/>
@@ -241,9 +241,9 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Density</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="IonDensity">
+  <owl:Class rdf:about="IonDensity">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Density"/>
+      <owl:Class rdf:about="Density"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion Density</rdfs:label>
   </owl:Class>
@@ -263,42 +263,42 @@
   <owl:Class rdf:about="NeutralNumberDensity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral Number Density</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="NumberDensity"/>
+      <owl:Class rdf:about="NumberDensity"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="NeutralDensity"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="MolecularNeutralDensity">
+  <owl:Class rdf:about="MolecularNeutralDensity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Molecular Neutral Density</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="MolecularDensity"/>
+      <owl:Class rdf:about="MolecularDensity"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="NeutralNumberDensity"/>
+      <owl:Class rdf:about="NeutralNumberDensity"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ProtonDensity">
+  <owl:Class rdf:about="ProtonDensity">
     <rdfs:subClassOf rdf:resource="IonDensity"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proton Density</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="NeutralDensity">
+  <owl:Class rdf:about="NeutralDensity">
     <rdfs:subClassOf rdf:resource="IonDensity"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral Density</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="NeutralMassDensity">
+  <owl:Class rdf:about="NeutralMassDensity">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="MassDensity"/>
+      <owl:Class rdf:about="MassDensity"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf rdf:resource="NeutralDensity"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral Mass Density</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="AtomicNeutralDensity">
+  <owl:Class rdf:about="AtomicNeutralDensity">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="AtomicDensity"/>
+      <owl:Class rdf:about="AtomicDensity"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Class rdf:about="NeutralNumberDensity"/>
@@ -306,7 +306,7 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atomic Neutral Density</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectronDensity">
+  <owl:Class rdf:about="ElectronDensity">
     <rdfs:subClassOf rdf:resource="IonDensity"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron Density</rdfs:label>
   </owl:Class>
@@ -321,36 +321,36 @@
     <rdfs:subClassOf rdf:resource="NumberDensity"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="WaveNumber">
+  <owl:Class rdf:about="WaveNumber">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wave Number</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="Frequency">
+  <owl:Class rdf:about="Frequency">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frequency</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="IonGyroFrequency">
+  <owl:Class rdf:about="IonGyroFrequency">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion Gyro Frequency</rdfs:label>
     <rdfs:subClassOf rdf:resource="Frequency"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="IonNeutralCollisionFrequency">
+  <owl:Class rdf:about="IonNeutralCollisionFrequency">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion Neutral Collision Frequency</rdfs:label>
     <rdfs:subClassOf rdf:resource="Frequency"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="CollisionFrequency">
+  <owl:Class rdf:about="CollisionFrequency">
     <rdfs:subClassOf rdf:resource="Frequency"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collision Frequency</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="EnergyFlux">
+  <owl:Class rdf:about="EnergyFlux">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
@@ -364,7 +364,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="NeutralWind">
+  <owl:Class rdf:about="NeutralWind">
     <rdfs:subClassOf rdf:resource="Wind"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -377,7 +377,7 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral Wind</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Deposition">
+  <owl:Class rdf:about="Deposition">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
@@ -389,73 +389,73 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Energy Deposition</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Particle">
+  <owl:Class rdf:about="Particle">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="EnergyDeposition"/>
+      <owl:Class rdf:about="EnergyDeposition"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Particle Energy Deposition</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Joule">
+  <owl:Class rdf:about="Joule">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joule</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="EnergyDeposition"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="StatisticalMeasure">
+  <owl:Class rdf:about="StatisticalMeasure">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Parameter"/>
+      <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statistical Measure</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="CrossCorrelation">
+  <owl:Class rdf:about="CrossCorrelation">
     <rdfs:subClassOf rdf:resource="StatisticalMeasure"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross Correlation</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="ChiSquare">
+  <owl:Class rdf:about="ChiSquare">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chi Square</rdfs:label>
     <rdfs:subClassOf rdf:resource="StatisticalMeasure"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="ReducedChiSquare">
+  <owl:Class rdf:about="ReducedChiSquare">
     <rdfs:subClassOf rdf:resource="ChiSquare"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reduced Chi Square</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Curtosis">
+  <owl:Class rdf:about="Curtosis">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curtosis</rdfs:label>
     <rdfs:subClassOf rdf:resource="StatisticalMeasure"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="AutoCorrelationFunction">
+  <owl:Class rdf:about="AutoCorrelationFunction">
     <rdfs:subClassOf rdf:resource="StatisticalMeasure"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auto Correlation Function</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Coherence">
+  <owl:Class rdf:about="Coherence">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coherence</rdfs:label>
     <rdfs:subClassOf rdf:resource="StatisticalMeasure"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="GoodnessOfFit">
+  <owl:Class rdf:about="GoodnessOfFit">
     <rdfs:subClassOf rdf:resource="StatisticalMeasure"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goodness Of Fit</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Covariance">
+  <owl:Class rdf:about="Covariance">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Covariance</rdfs:label>
     <rdfs:subClassOf rdf:resource="StatisticalMeasure"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="NumberOfSamples">
+  <owl:Class rdf:about="NumberOfSamples">
     <rdfs:subClassOf rdf:resource="StatisticalMeasure"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number of Samples</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Period">
+  <owl:Class rdf:about="Period">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Period</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
@@ -469,14 +469,14 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coordinate Parameter</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElevationAngle">
+  <owl:Class rdf:about="ElevationAngle">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Coordinate"/>
+      <owl:Class rdf:about="Coordinate"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elevation Angle</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Longitude">
+  <owl:Class rdf:about="Longitude">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Coordinate"/>
     </rdfs:subClassOf>
@@ -490,7 +490,7 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latitude</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="RightAscension">
+  <owl:Class rdf:about="RightAscension">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Coordinate"/>
     </rdfs:subClassOf>
@@ -498,7 +498,7 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Right Ascension</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="DeclinationAngle">
+  <owl:Class rdf:about="DeclinationAngle">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A coordinate that makes up a part of the equatorial coordinate system</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Declination Angle</rdfs:label>
     <rdfs:subClassOf>
@@ -506,7 +506,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="GalacticLatitude">
+  <owl:Class rdf:about="GalacticLatitude">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Coordinate"/>
     </rdfs:subClassOf>
@@ -514,7 +514,7 @@
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A coordinate that makes up a part of the galactic coordinate system</rdfs:comment>
   </owl:Class>
 
-  <owl:Class rdf:ID="GalacticLongitude">
+  <owl:Class rdf:about="GalacticLongitude">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A coordinate that makes up a part of the galactic coordinate system</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Coordinate"/>
@@ -522,7 +522,7 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galactic Longitude</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="HourAngle">
+  <owl:Class rdf:about="HourAngle">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A coordinate that makes up a part of the equatorial coordinate system</rdfs:comment>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hour Angle</rdfs:label>
     <rdfs:subClassOf>
@@ -537,7 +537,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="AzimuthAngle">
+  <owl:Class rdf:about="AzimuthAngle">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azimuth Angle</rdfs:label>
     <rdfs:subClassOf rdf:resource="Coordinate"/>
   </owl:Class>
@@ -547,16 +547,16 @@
     <rdfs:subClassOf rdf:resource="Coordinate"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="TimeDependentParameter">
+  <owl:Class rdf:about="TimeDependentParameter">
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
           <owl:Restriction>
             <owl:someValuesFrom>
-              <owl:Class rdf:ID="Time"/>
+              <owl:Class rdf:about="Time"/>
             </owl:someValuesFrom>
             <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasCoordinate"/>
+              <owl:ObjectProperty rdf:about="hasCoordinate"/>
             </owl:onProperty>
           </owl:Restriction>
           <owl:Class rdf:about="Parameter"/>
@@ -566,7 +566,7 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time Dependent Parameter</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="LongitudeDependentParameter">
+  <owl:Class rdf:about="LongitudeDependentParameter">
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
@@ -624,9 +624,9 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="GeoPotential">
+  <owl:Class rdf:about="GeoPotential">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Potential"/>
+      <owl:Class rdf:about="Potential"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geo Potential</rdfs:label>
   </owl:Class>
@@ -659,14 +659,14 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectronTemperature">
+  <owl:Class rdf:about="ElectronTemperature">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="IonTemperature"/>
+      <owl:Class rdf:about="IonTemperature"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron Temperature</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="NeutralTemperature">
+  <owl:Class rdf:about="NeutralTemperature">
     <rdfs:subClassOf rdf:resource="IonTemperature"/>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -679,12 +679,12 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral Temperature</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="ProtonTemperature">
+  <owl:Class rdf:about="ProtonTemperature">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proton Temperature</rdfs:label>
     <rdfs:subClassOf rdf:resource="IonTemperature"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="PotentialTemperature">
+  <owl:Class rdf:about="PotentialTemperature">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential Temperature</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Temperature"/>
@@ -698,24 +698,24 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="PotentialEntropy">
+  <owl:Class rdf:about="PotentialEntropy">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential Entropy</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Entropy"/>
+      <owl:Class rdf:about="Entropy"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectricPotential">
+  <owl:Class rdf:about="ElectricPotential">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Potential</rdfs:label>
     <rdfs:subClassOf rdf:resource="Potential"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="GravitationalPotential">
+  <owl:Class rdf:about="GravitationalPotential">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gravitational Potential</rdfs:label>
     <rdfs:subClassOf rdf:resource="Potential"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="Polarization">
+  <owl:Class rdf:about="Polarization">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
@@ -729,9 +729,9 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electromagnetic Radiation</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Wavelength">
+  <owl:Class rdf:about="Wavelength">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="ElectromagneticRadiation"/>
+      <owl:Class rdf:about="ElectromagneticRadiation"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -746,22 +746,22 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wavelength</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="He1083nmVelocity">
+  <owl:Class rdf:about="He1083nmVelocity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He 1083nm Velocity</rdfs:label>
     <rdfs:subClassOf rdf:resource="ElectromagneticRadiation"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="Halpha">
+  <owl:Class rdf:about="Halpha">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Halpha</rdfs:label>
     <rdfs:subClassOf rdf:resource="ElectromagneticRadiation"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="WhiteLight">
+  <owl:Class rdf:about="WhiteLight">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White Light</rdfs:label>
     <rdfs:subClassOf rdf:resource="ElectromagneticRadiation"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectromagneticRadiationIntensity">
+  <owl:Class rdf:about="ElectromagneticRadiationIntensity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electromagnetic Radiation Intensity</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -778,17 +778,17 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="SourceFunctionGradient">
+  <owl:Class rdf:about="SourceFunctionGradient">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source Function Gradient</rdfs:label>
     <rdfs:subClassOf rdf:resource="ElectromagneticRadiationIntensity"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="SourceFunction">
+  <owl:Class rdf:about="SourceFunction">
     <rdfs:subClassOf rdf:resource="ElectromagneticRadiationIntensity"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source Function</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="He1083nmIntensity">
+  <owl:Class rdf:about="He1083nmIntensity">
     <rdfs:subClassOf>
       <owl:Class rdf:about="ElectromagneticRadiationIntensity"/>
     </rdfs:subClassOf>
@@ -822,29 +822,29 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="DopplerVelocity">
+  <owl:Class rdf:about="DopplerVelocity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doppler Velocity</rdfs:label>
     <rdfs:subClassOf rdf:resource="Velocity"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="NeutralVelocity">
+  <owl:Class rdf:about="NeutralVelocity">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Velocity"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral Velocity</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="IonVelocity">
+  <owl:Class rdf:about="IonVelocity">
     <rdfs:subClassOf rdf:resource="Velocity"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion Velocity</rdfs:label>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:ID="hasErrorParameter">
+  <owl:ObjectProperty rdf:about="hasErrorParameter">
     <rdfs:domain rdf:resource="Parameter"/>
     <rdfs:range rdf:resource="ErrorParameter"/>
   </owl:ObjectProperty>
 
-  <owl:Class rdf:ID="ErrorParameter">
+  <owl:Class rdf:about="ErrorParameter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Error Parameter</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
@@ -858,7 +858,7 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="AuroralBoundaryIndex">
+  <owl:Class rdf:about="AuroralBoundaryIndex">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auroral Boundary Index</rdfs:label>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -876,61 +876,61 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geophysical Index</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="GeomagneticIndex">
+  <owl:Class rdf:about="GeomagneticIndex">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geomagnetic Index</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="GeophysicalIndex"/>
+      <owl:Class rdf:about="GeophysicalIndex"/>
     </rdfs:subClassOf>
   </owl:Class>
 
   <owl:Class rdf:about="MagneticActivityIndex">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Magnetic Activity Index</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Index"/>
+      <owl:Class rdf:about="Index"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="SolarFlux">
+  <owl:Class rdf:about="SolarFlux">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="MagneticActivityIndex"/>
+      <owl:Class rdf:about="MagneticActivityIndex"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solar Flux Index</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="SunspotNumber">
+  <owl:Class rdf:about="SunspotNumber">
     <rdfs:subClassOf>
       <owl:Class rdf:about="MagneticActivityIndex"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sunspot Number</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="SolarSunspotArea">
+  <owl:Class rdf:about="SolarSunspotArea">
     <rdfs:subClassOf rdf:resource="MagneticActivityIndex"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solar Sunspot Area</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="SolarIndex">
+  <owl:Class rdf:about="SolarIndex">
     <rdfs:subClassOf rdf:resource="Index"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Solar Index</rdfs:label>
   </owl:Class>
 
-  <owl:ObjectProperty rdf:ID="hasNumericalInterval">
+  <owl:ObjectProperty rdf:about="hasNumericalInterval">
     <rdfs:domain rdf:resource="Index"/>
     <rdfs:range rdf:resource="NumericalInterval"/>
   </owl:ObjectProperty>
 
-  <owl:Class rdf:ID="NumericalInterval">
+  <owl:Class rdf:about="NumericalInterval">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Numerical Interval</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An interval on the Real numerical axis</rdfs:comment>
   </owl:Class>
 
-  <owl:DatatypeProperty rdf:ID="greaterOrEqualThan">
+  <owl:DatatypeProperty rdf:about="greaterOrEqualThan">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <rdfs:domain rdf:resource="NumericalInterval"/>
   </owl:DatatypeProperty>
 
-  <owl:DatatypeProperty rdf:ID="lessOrEqualThan">
+  <owl:DatatypeProperty rdf:about="lessOrEqualThan">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="NumericalInterval"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -943,28 +943,28 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="StokesParameterU">
+  <owl:Class rdf:about="StokesParameterU">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="StokesParameter"/>
+      <owl:Class rdf:about="StokesParameter"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stokes Parameter U</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="StokesParameterQ">
+  <owl:Class rdf:about="StokesParameterQ">
     <rdfs:subClassOf>
       <owl:Class rdf:about="StokesParameter"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stokes Parameter Q</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="StokesParameterV">
+  <owl:Class rdf:about="StokesParameterV">
     <rdfs:subClassOf>
       <owl:Class rdf:about="StokesParameter"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stokes Parameter V</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="StokesParameterI">
+  <owl:Class rdf:about="StokesParameterI">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stokes Parameter I</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="StokesParameter"/>
@@ -978,24 +978,24 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectricPotential">
+  <owl:Class rdf:about="ElectricPotential">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Potential</rdfs:label>
     <rdfs:subClassOf rdf:resource="Potential"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="GravitationalPotential">
+  <owl:Class rdf:about="GravitationalPotential">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gravitational Potential</rdfs:label>
     <rdfs:subClassOf rdf:resource="Potential"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="GeoPotential">
+  <owl:Class rdf:about="GeoPotential">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Potential"/>
+      <owl:Class rdf:about="Potential"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Geo Potential</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Pressure">
+  <owl:Class rdf:about="Pressure">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
@@ -1007,26 +1007,26 @@
     <rdfs:subClassOf rdf:resource="Pressure"/>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectronPressure">
+  <owl:Class rdf:about="ElectronPressure">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="IonPressure"/>
+      <owl:Class rdf:about="IonPressure"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electron Pressure</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="ProtonPressure">
+  <owl:Class rdf:about="ProtonPressure">
     <rdfs:subClassOf>
       <owl:Class rdf:about="IonPressure"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proton Pressure</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="NeutralPressure">
+  <owl:Class rdf:about="NeutralPressure">
     <rdfs:subClassOf rdf:resource="IonPressure"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neutral Pressure</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Noise">
+  <owl:Class rdf:about="Noise">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noise</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
@@ -1040,33 +1040,33 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="RayleighCount">
+  <owl:Class rdf:about="RayleighCount">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Count"/>
+      <owl:Class rdf:about="Count"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rayleigh Count</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="BackgroundCount">
+  <owl:Class rdf:about="BackgroundCount">
     <rdfs:subClassOf rdf:resource="Count"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Background Count</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Current">
+  <owl:Class rdf:about="Current">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Current</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="Absorption">
+  <owl:Class rdf:about="Absorption">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Absorption</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Flux">
+  <owl:Class rdf:about="Flux">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flux</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
@@ -1080,43 +1080,43 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conductivity</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="PedersenConductivity">
+  <owl:Class rdf:about="PedersenConductivity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pedersen Conductivity</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Conductivity"/>
+      <owl:Class rdf:about="Conductivity"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="HallConductivity">
+  <owl:Class rdf:about="HallConductivity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hall Conductivity</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Conductivity"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="Irradiance">
+  <owl:Class rdf:about="Irradiance">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Irradiance</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="DampingParameter">
+  <owl:Class rdf:about="DampingParameter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Damping Parameter</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="NonDimensionalQuantity">
+  <owl:Class rdf:about="NonDimensionalQuantity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Non Dimensional Quantity</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="PhysicalQuantity">
+  <owl:Class rdf:about="PhysicalQuantity">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physical Quantity</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="NeutralParameter">
+  <owl:Class rdf:about="NeutralParameter">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physical quantity with electric charge = 0</rdfs:comment>
     <owl:equivalentClass>
       <owl:Class>
@@ -1126,7 +1126,7 @@
               <owl:ObjectProperty rdf:about="hasElectricCharge"/>
             </owl:onProperty>
             <owl:hasValue>
-              <ElectricCharge rdf:ID="ZeroElectricCharge">
+              <ElectricCharge rdf:about="ZeroElectricCharge">
                 <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric charge = 0</rdfs:comment>
               </ElectricCharge>
             </owl:hasValue>
@@ -1145,40 +1145,40 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="PotentialEntropy">
+  <owl:Class rdf:about="PotentialEntropy">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Potential Entropy</rdfs:label>
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Entropy"/>
+      <owl:Class rdf:about="Entropy"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="SpecificEntropy">
+  <owl:Class rdf:about="SpecificEntropy">
     <rdfs:subClassOf rdf:resource="Entropy"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specific Entropy</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="DataQualityCode">
+  <owl:Class rdf:about="DataQualityCode">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Quality Code</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ScalarField">
+  <owl:Class rdf:about="ScalarField">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scalar Field</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="Power">
+  <owl:Class rdf:about="Power">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Power</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="ElectricCharge">
+  <owl:Class rdf:about="ElectricCharge">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
@@ -1186,10 +1186,10 @@
     <owl:equivalentClass>
       <owl:Class>
         <owl:oneOf rdf:parseType="Collection">
-          <ElectricCharge rdf:ID="NegativeElectricCharge">
+          <ElectricCharge rdf:about="NegativeElectricCharge">
             <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric charge &lt; 0</rdfs:comment>
           </ElectricCharge>
-          <ElectricCharge rdf:ID="NegativeOneElectricCharge">
+          <ElectricCharge rdf:about="NegativeOneElectricCharge">
             <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric charge = -1</rdfs:comment>
           </ElectricCharge>
           <ElectricCharge rdf:about="PositiveElectricCharge"/>
@@ -1201,7 +1201,7 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Charge</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="PulseLength">
+  <owl:Class rdf:about="PulseLength">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulse Length</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
@@ -1215,21 +1215,21 @@
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="IonComposition">
+  <owl:Class rdf:about="IonComposition">
     <rdfs:subClassOf>
-      <owl:Class rdf:ID="Composition"/>
+      <owl:Class rdf:about="Composition"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ion Composition</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Radiance">
+  <owl:Class rdf:about="Radiance">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radiance</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="Enstrophy">
+  <owl:Class rdf:about="Enstrophy">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
@@ -1253,26 +1253,26 @@
     </owl:equivalentClass>
   </owl:Class>
 
-  <owl:Class rdf:ID="SignaltoNoiseRatio">
+  <owl:Class rdf:about="SignaltoNoiseRatio">
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Signal To Noise Ratio</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="Width">
+  <owl:Class rdf:about="Width">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Width</rdfs:label>
     <rdfs:subClassOf>
       <owl:Class rdf:about="Parameter"/>
     </rdfs:subClassOf>
   </owl:Class>
 
-  <owl:Class rdf:ID="DopplerWidth">
+  <owl:Class rdf:about="DopplerWidth">
     <rdfs:subClassOf rdf:resource="Width"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doppler Width</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="AnionParameter">
+  <owl:Class rdf:about="AnionParameter">
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
@@ -1289,7 +1289,7 @@
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anion Parameter</rdfs:label>
   </owl:Class>
 
-  <owl:Class rdf:ID="ProtonParameter">
+  <owl:Class rdf:about="ProtonParameter">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proton Parameter</rdfs:label>
     <owl:equivalentClass>
       <owl:Class>
@@ -1297,10 +1297,10 @@
           <owl:Class rdf:about="Parameter"/>
           <owl:Restriction>
             <owl:onProperty>
-              <owl:ObjectProperty rdf:ID="hasElectricCharge"/>
+              <owl:ObjectProperty rdf:about="hasElectricCharge"/>
             </owl:onProperty>
             <owl:hasValue>
-              <ElectricCharge rdf:ID="PositiveOneElectricCharge">
+              <ElectricCharge rdf:about="PositiveOneElectricCharge">
                 <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Electric Charge = +1</rdfs:comment>
               </ElectricCharge>
             </owl:hasValue>
@@ -1310,7 +1310,7 @@
     </owl:equivalentClass>
   </owl:Class>
 
-  <owl:Class rdf:ID="CationParameter">
+  <owl:Class rdf:about="CationParameter">
     <owl:equivalentClass>
       <owl:Class>
         <owl:intersectionOf rdf:parseType="Collection">
@@ -1319,7 +1319,7 @@
               <owl:ObjectProperty rdf:about="hasElectricCharge"/>
             </owl:onProperty>
             <owl:hasValue>
-              <ElectricCharge rdf:ID="PositiveElectricCharge">
+              <ElectricCharge rdf:about="PositiveElectricCharge">
                 <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">electric charge &gt; 0</rdfs:comment>
               </ElectricCharge>
             </owl:hasValue>
@@ -1337,7 +1337,7 @@
     <rdfs:domain rdf:resource="Parameter"/>
   </owl:ObjectProperty>
 
-  <owl:FunctionalProperty rdf:ID="hasMagnitude">
+  <owl:FunctionalProperty rdf:about="hasMagnitude">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strength</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -1351,7 +1351,7 @@
     </rdfs:domain>
   </owl:FunctionalProperty>
 
-  <owl:ObjectProperty rdf:ID="hasPhysicalDomain">
+  <owl:ObjectProperty rdf:about="hasPhysicalDomain">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
     <rdfs:domain rdf:resource="Parameter"/>
     <rdfs:range rdf:resource="PhysicalDomain"/>

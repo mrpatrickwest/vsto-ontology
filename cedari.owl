@@ -11,7 +11,6 @@
     xmlns:vsto="&vsto;"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:vsto="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:dc="http://purl.org/dc/terms/"
@@ -31,9 +30,6 @@
     >log10 (HE number density)</dc:description>
     <dc:title>lg([HE])</dc:title>
   </vsto:AtomicNeutralDensity>
-  <rdf:description
-    <dc:title>Positive One Electric Charge</dc:title>
-  </rdf:Description>
   <vsto:DataQualityCode rdf:ID="cedar_parameter_469">
     <dc:description
     >St. Santin data quality code 4</dc:description>
@@ -168,10 +164,6 @@
     <dc:description
     >OPeNDAP Ascii Response</dc:description>
   </vsto:AsciiDataFile>
-  <rdf:description
-    <dc:title
-    >Negative One Electric Charge</dc:title>
-  </rdf:Description>
   <vsto:PulseLength rdf:ID="cedar_parameter_404">
     <dc:identifier
     >404</dc:identifier>
@@ -247,10 +239,6 @@
     <dc:title
     >Beg TimeInc</dc:title>
   </vsto:Time>
-  <rdf:description
-    <dc:title
-    >Zero Electric Charge</dc:title>
-  </rdf:Description>
   <vsto:DataQualityCode rdf:ID="cedar_parameter_472">
     <dc:description
     >Chatanika/Sondrestrom data qual code 2</dc:description>
@@ -367,10 +355,6 @@ Although it has been given many usages, the observatory's main purpose is to det
     <dc:identifier
     >880</dc:identifier>
   </vsto:AtomicNeutralDensity>
-  <rdf:description
-    <dc:title
-    >Positive Electric Charge</dc:title>
-  </rdf:Description>
   <vsto:StokesParameterI rdf:about="http://escience.rpi.edu/ontology/vsto/2/0/vsto.owl#SP4D_StokesI">
     <dc:title
     >SP4D_StokesI</dc:title>
@@ -480,10 +464,6 @@ Although it has been given many usages, the observatory's main purpose is to det
     <dc:title
     >DDS</dc:title>
   </vsto:DdsDataFile>
-  <rdf:description
-    <dc:title
-    >Negative Electric Charge</dc:title>
-  </rdf:Description>
   <vsto:ElectronDensity rdf:ID="cedar_parameter_531">
     <dc:identifier
     >531</dc:identifier>

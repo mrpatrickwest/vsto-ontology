@@ -253,7 +253,7 @@
 
   <owl:ObjectProperty rdf:about="hasDateTimeCoverage">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-    <rdfs:range rdf:resource="&time:PropertInterval"/>
+    <rdfs:range rdf:resource="&time;PropertInterval"/>
   </owl:ObjectProperty>
 
   <owl:FunctionalProperty rdf:ID="hasAccessURL">
