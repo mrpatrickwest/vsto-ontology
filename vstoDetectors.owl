@@ -14,6 +14,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xml:base="&vsto;">
 
+<!-- Detectors -->
   <owl:Class rdf:about="ImagingDetector">
     <rdfs:subClassOf rdf:resource="Detector"/>
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imaging Detector</rdfs:label>

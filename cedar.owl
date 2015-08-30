@@ -14,8 +14,20 @@
     xmlns:dc="http://purl.org/dc/terms/"
     xml:base="&cedar;">
 
-  <owl:Ontology rdf:about="">
+  <owl:Ontology rdf:about="&cedar;">
     <owl:imports rdf:resource="&vsto;"/>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.0</owl:versionInfo>
+    <dcterms:creator xml:lang="en-US">Tetherless World Constellation, Rensselaer Polytechnic Institute</dcterms:creator>
+    <dcterms:contributor xml:lang="en-US">Stephan Zednik (zednis@rpi.edu)</dcterms:contributor>
+    <dcterms:contributor xml:lang="en-US">Patrick West (westp@rpi.edu)</dcterms:contributor>
+    <dcterms:contributor xml:lang="en-US">Deborah McGuinness (dlm@cs.rpi.edu)</dcterms:contributor>
+    <dcterms:title xml:lang="en-US">CEDAR Extensions to Virtual Solar Terrestrial Observatory (VSTO) ontology</dcterms:title>
+    <dcterms:contributor xml:lang="en-US">Peter Fox (pfox@cs.rpi.edu)</dcterms:contributor>
+    <dcterms:contributor xml:lang="en-US">Jose Garcia (jgarcia@ucar.edu)</dcterms:contributor>
+    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-04-18</dcterms:issued>
+    <dcterms:contributor xml:lang="en-US">Eric Rozell (rozele@rpi.edu)</dcterms:contributor>
+    <dcterms:contributor xml:lang="en-US">Luca Cinquini (luca.cinquini@jpl.nasa.gov)</dcterms:contributor>
+    <dcterms:description xml:lang="en-US">CEDAR Extensions to the Virtual Solar Terrestrial Observatory (VSTO) Ontology</dcterms:description>
   </owl:Ontology>
 
   <owl:Class rdf:ID="CEDARmetadataService">

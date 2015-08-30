@@ -14,7 +14,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xml:base="&vsto;">
 
-<!-- KEEP HERE -->
+<!-- MISC -->
   <owl:DatatypeProperty rdf:ID="hasErrors">
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </owl:DatatypeProperty>
