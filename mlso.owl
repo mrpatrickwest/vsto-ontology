@@ -2,6 +2,7 @@
 <!DOCTYPE rdf:RDF [
   <!ENTITY vsto "http://vsto.org/schema#">
   <!ENTITY mlso "http://vsto.org/mlso#">
+  <!ENTITY dcterms "http://purl.org/dc/terms/">
 ]>
 <rdf:RDF
     xmlns="&mlso;"
@@ -11,7 +12,7 @@
     xmlns:owl="http://www.w3.org/2002/07/owl#"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:dcterms="&dcterms;"
     xml:base="&mlso;">
 
   <owl:Ontology rdf:about="">
