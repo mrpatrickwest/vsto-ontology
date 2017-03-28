@@ -5,7 +5,7 @@
 for i in vstoAnnotations.owl vsto.owl vstoInstruments.owl vstoParameters.owl vstoDetectors.owl vstoDeployment.owl vstoData.owl vstoGeo.owl
 do
 
-ed $i << EOF
+ed $i << EOF > /dev/null 2>&1
 /^<!-- START
 1,.d
 .
