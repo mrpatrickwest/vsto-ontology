@@ -277,5 +277,14 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
   </owl:ObjectProperty>
 
+  <owl:FunctionalProperty rdf:ID="hasDataResponse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+
+  <owl:ObjectProperty rdf:ID="hasConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="MetadataService"/>
+  </owl:ObjectProperty>
+
 </rdf:RDF>
 
