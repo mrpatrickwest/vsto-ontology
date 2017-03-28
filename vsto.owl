@@ -16,22 +16,8 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xml:base="&vsto;">
 
+<!-- START VSTO MAIN ONTOLOGY -->
 <!-- VSTO Main Ontology -->
-  <owl:Ontology rdf:about="&vsto;">
-    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3.0</owl:versionInfo>
-    <dcterms:creator xml:lang="en-US">Tetherless World Constellation, Rensselaer Polytechnic Institute</dcterms:creator>
-    <dcterms:contributor xml:lang="en-US">Stephan Zednik (zednis@rpi.edu)</dcterms:contributor>
-    <dcterms:contributor xml:lang="en-US">Patrick West (westp@rpi.edu)</dcterms:contributor>
-    <dcterms:contributor xml:lang="en-US">Deborah McGuinness (dlm@cs.rpi.edu)</dcterms:contributor>
-    <dcterms:title xml:lang="en-US">Virtual Solar Terrestrial Observatory (VSTO) ontology</dcterms:title>
-    <dcterms:contributor xml:lang="en-US">Peter Fox (pfox@cs.rpi.edu)</dcterms:contributor>
-    <dcterms:contributor xml:lang="en-US">Jose Garcia (jgarcia@ucar.edu)</dcterms:contributor>
-    <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-04-18</dcterms:issued>
-    <dcterms:contributor xml:lang="en-US">Eric Rozell (rozele@rpi.edu)</dcterms:contributor>
-    <dcterms:contributor xml:lang="en-US">Luca Cinquini (luca.cinquini@jpl.nasa.gov)</dcterms:contributor>
-    <dcterms:description xml:lang="en-US">The Virtual Solar Terrestrial Observatory (VSTO) Ontology, &gt;described using W3C RDF Schema and the Web Ontology Language.</dcterms:description>
-  </owl:Ontology>
-
   <owl:Class rdf:about="Instrument">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instrument</rdfs:label>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">

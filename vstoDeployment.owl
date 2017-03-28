@@ -14,6 +14,7 @@
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xml:base="&vsto;">
 
+<!-- START OF VSTO PLATFORM/DEPLOYMENT ONTOLOGY -->
 <!-- Platform/Deployment -->
   <owl:Class rdf:ID="StationaryDeployment">
     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stationary Deployment</rdfs:label>

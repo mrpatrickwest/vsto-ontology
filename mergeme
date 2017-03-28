@@ -1,0 +1,27 @@
+#!/bin/sh
+
+> schema.owl
+
+for i in vstoAnnotations.owl vsto.owl vstoInstruments.owl vstoParameters.owl vstoDetectors.owl vstoDeployment.owl vstoData.owl vstoGeo.owl
+do
+
+ed $i << EOF
+/^<!-- START
+1,.d
+.
+/^<\/rdf:RDF
+d
+.
+w tmp.owl
+q
+EOF
+
+cat tmp.owl >> schema.owl
+
+done
+
+echo "" >> schema.owl
+echo "</rdf:RDF>" >> schema.owl
+
+/bin/rm -f tmp.owl
+
