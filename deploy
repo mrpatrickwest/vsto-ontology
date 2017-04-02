@@ -14,6 +14,7 @@ do
     $COMPILER --out=n3 ${i} > ${bas}.n3
     $COMPILER --out=nt ${i} > ${bas}.nt
     $COMPILER --out=ttl ${i} > ${bas}.ttl
+    $COMPILER --out=jsonld ${i} > ${bas}.json
 done
 
 # copy the ontologies to document root
