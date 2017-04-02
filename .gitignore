@@ -1,3 +1,4 @@
+schema.owl
 /logs/
 *.ttl
 *.json

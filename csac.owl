@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE rdf:RDF [
-  <!ENTITY vsto "http://vsto.org/schema#">
-  <!ENTITY csac "http://vsto.org/csac#">
+  <!ENTITY vsto "https://vsto.org/schema#">
+  <!ENTITY csac "https://vsto.org/csac#">
   <!ENTITY dcterms "http://purl.org/dc/terms/">
 ]>
 <rdf:RDF

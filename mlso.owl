@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE rdf:RDF [
-  <!ENTITY vsto "http://vsto.org/schema#">
-  <!ENTITY mlso "http://vsto.org/mlso#">
+  <!ENTITY vsto "https://vsto.org/schema#">
+  <!ENTITY mlso "https://vsto.org/mlso#">
   <!ENTITY dcterms "http://purl.org/dc/terms/">
 ]>
 <rdf:RDF

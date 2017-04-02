@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE rdf:RDF [
-  <!ENTITY vsto "http://vsto.org/schema#">
-  <!ENTITY mlso "http://vsto.org/mlso#">
-  <!ENTITY mlsoi "http://vsto.org/mlso/individuals/">
+  <!ENTITY vsto "https://vsto.org/schema#">
+  <!ENTITY mlso "https://vsto.org/mlso#">
+  <!ENTITY mlsoi "https://vsto.org/mlso/individuals/">
 ]>
 <rdf:RDF
     xmlns="&mlsoi;"

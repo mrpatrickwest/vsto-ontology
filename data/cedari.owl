@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE rdf:RDF [
-  <!ENTITY vsto "http://vsto.org/schema#">
-  <!ENTITY cedar "http://vsto.org/cedar#">
-  <!ENTITY cedari "http://vsto.org/cedar/individuals/">
+  <!ENTITY vsto "https://vsto.org/schema#">
+  <!ENTITY cedar "https://vsto.org/cedar#">
+  <!ENTITY cedari "https://vsto.org/cedar/individuals/">
 ]>
 <rdf:RDF
     xmlns="&cedari;"
