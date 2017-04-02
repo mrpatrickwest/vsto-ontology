@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY vsto "https://vsto.org/schema#">
+  <!ENTITY time "http://www.w3.org/2006/time#">
+]>
+<rdf:RDF
+    xmlns="&vsto;"
+    xmlns:vsto="&vsto;"
+    xmlns:time="&time;"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xml:base="&vsto;">
+
+<!-- START OF VSTO DATA ONTOLOGY -->
+<!-- Data -->
+  <owl:Class rdf:about="Dataset">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dataset</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      A collection of observations of the physical quantity of interest.  They usually have a location, observatory, instrument, and parameter (or set of parameters) associated with them.  They also have a format along with an epoch over which they were taken.
+    </rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:ID="DataArchive">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Archive</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      A collection of data storage media and services that is accessible through a unified interface. A data archive may contain datasets from multiple instruments and multiple observatories.
+    </rdfs:comment>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:ID="hasDataProduct">
+    <rdfs:domain rdf:resource="Dataset"/>
+    <rdfs:range rdf:resource="DataProduct"/>
+  </owl:ObjectProperty>
+
+  <owl:Class rdf:about="DataProduct">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Product</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      An entity that is generated from data, such as a data file or a
+      plot or an image.
+    </rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:ID="DataFile">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="DataProduct"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data File</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+      A data product returned as a form of data, such as ascii data or OPeNDAP data or a data file of a particular format such as netcdf or hdf4
+    </rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="DataPlot">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Plot</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="DataProduct"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data product returned in the form of a plot</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:about="GeoPlot">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contour plot of the selected variable versus latitude (Y axis) and longitude (X axis)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latitude-Longitude Contour Plot</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:ID="LatitudeDependentParameter"/>
+        </owl:someValuesFrom>
+        <owl:onProperty rdf:resource="hasPlottedParameter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="LongitudeDependentParameter"/>
+        <owl:onProperty rdf:resource="hasPlottedParameter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="DataPlot"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="TimeSeriesPlot">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="DataPlot"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="TimeDependentParameter"/>
+        <owl:onProperty rdf:resource="hasPlottedParameter"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plot of the selected variable (Y axis) versus time (X axis)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Time Series Plot</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="HeightVsTimePlot">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A contour plot of the selected variable versus Height (Y axis) and Time (X axis)</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Altitude vs Time Plot</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="TimeDependentParameter"/>
+              <owl:Class rdf:ID="AltitudeDependentParameter"/>
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasPlottedParameter"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="DataPlot"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="DataImage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Image</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data product returned as an image</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="DataProduct"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="JpgDataImage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JPG</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JPEG Data Image</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="DataImage"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="FitsDataImage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FTS</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FITS Data Image</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="DataImage"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="AnyDataImage">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="DataImage"/>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="BestDataImage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="DataImage"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="AverageDataImage">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="DataImage"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:ID="AsciiDataFile">
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASCII Data File</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASC</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="NetCDFDataFile">
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetCDF</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPeNDAP Data Object returned as NetCDF (Network Common Data Form) data file</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:ID="DdsDataFile">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDS</rdfs:label>
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPeNDAP DDS (Data Descriptor Structure) data file</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:ID="OpendapDataFile">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPeNDAP</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPeNDAP data file</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="InfoDataFile">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPeNDAP information data file</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">INFO</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="StreamDataFile">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stream binary file</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STREAM</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="TabDataFile">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tab delimited data file</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TAB</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="FlatDataFile">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FLAT</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flat space-delimited data file</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+  </owl:Class>
+
+  <owl:Class rdf:ID="DdxDataFile">
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPeNDAP DDX (Data descriptor in XML) data file</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DDX</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="DasDataFile">
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPeNDAP DAS (Data Attribute Structure) data file</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAS</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="IdlScriptDataFile">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDL</rdfs:label>
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDL Script Data File</rdfs:comment>
+  </owl:Class>
+
+  <owl:Class rdf:ID="HtmlDataFile">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML</rdfs:label>
+    <rdfs:subClassOf rdf:resource="DataFile"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTML form for OPeNDAP based data access</rdfs:comment>
+  </owl:Class>
+
+<!-- Properties -->
+  <owl:ObjectProperty rdf:about="isFromInstrumentOperatingMode">
+    <rdfs:domain rdf:resource="Dataset"/>
+    <rdfs:range rdf:resource="InstrumentOperatingMode"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="isFromInstrument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="Instrument"/>
+    <rdfs:domain rdf:resource="Dataset"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="hasContainedParameter">
+    <rdfs:domain rdf:resource="Dataset"/>
+    <rdfs:range rdf:resource="Parameter"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="hasDateTimeCoverage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="&time;PropertInterval"/>
+  </owl:ObjectProperty>
+
+  <owl:FunctionalProperty rdf:ID="hasAccessURL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="DataProduct"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </owl:FunctionalProperty>
+
+  <owl:FunctionalProperty rdf:ID="hasOutput">
+    <rdfs:range rdf:resource="DataProduct"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+
+  <owl:DatatypeProperty rdf:ID="hasType">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="DataProduct"/>
+  </owl:DatatypeProperty>
+
+  <owl:ObjectProperty rdf:ID="hasDataRequest">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </owl:ObjectProperty>
+
+  <owl:FunctionalProperty rdf:ID="hasDataResponse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+
+  <owl:ObjectProperty rdf:ID="hasConstraint">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="MetadataService"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>
+

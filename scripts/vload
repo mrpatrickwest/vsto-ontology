@@ -1,0 +1,96 @@
+#!/bin/bash
+#
+# Virtuoso			Bulk Loader Script
+#
+# Author: Shangguan (http://www.cs.rpi.edu/~shangz, shangz@cs.rpi.edu)
+# Version: 1.0
+# Date: Dec 12, 2010
+# Description: Bulk loader script for Virtuoso
+# Usage: vload [rdf|ttl|nt|nq] [data_file] [graph_uri]
+
+# Get input arguments
+args=("$@")
+LOGFILE="/data/vsto/vsto-ontology/logs/vload-`date +%Y%m%d-%H%M%S`.log"
+
+if [ $# -ne 3 ]; then
+    echo "Wrong number of arguments. Correct usage: \"vload [rdf|ttl|nt|nq] [data_file] [graph_uri]\""
+else
+    input_format=${args[0]}
+    data_file=${args[1]}
+    graph_uri=${args[2]}
+
+    # Status message
+    echo "Loading triples into graph <$graph_uri>..."
+
+    # Check if file exists
+    if [ ! -e $data_file ]; then
+	echo "Data file doesn't exist"
+	exit 1
+    else
+	# Copy file to Virtuoso allowed directory
+	virtuoso_allowed_dir="/usr/share/virtuoso-opensource-6.1/vad"
+	if [ ! -d $virtuoso_allowed_dir ]; then
+	    mkdir $virtuoso_allowed_dir
+	    chmod a+w $virtuoso_allowed_dir
+	fi
+	cp ${data_file} ${virtuoso_allowed_dir}
+	file_name_local=${data_file##*/}
+	file_name_full=$virtuoso_allowed_dir/$file_name_local
+
+	# Log into Virtuoso isql env
+	isql_cmd="/usr/bin/isql-vt 1111 dba"
+	isql_pwd="ndAeQwFh9wfteR4g"  # default admin password, may neeed to change
+
+	# Call Virtuoso loading functions for different input formats
+	load_func=""
+	case "$input_format" in
+	    "rdf")
+		load_func="DB.DBA.RDF_LOAD_RDFXML_MT(file_to_string_output('$file_name_full'), '', '$graph_uri');"
+		# echo $load_func
+	    ;;
+	    "ttl")
+		load_func="DB.DBA.TTLP_MT(file_to_string_output('$file_name_full'),'','$graph_uri', 255);"
+		# echo $load_func
+	    ;;
+	    "nt")
+		load_func="DB.DBA.TTLP_MT(file_to_string_output('$file_name_full'),'','$graph_uri', 255);"
+		# echo $load_func
+	    ;;
+	    "nq")
+		load_func="DB.DBA.TTLP_MT(file_to_string_output('$file_name_full'),'','$graph_uri', 512);"
+		# echo $load_func
+	    ;;
+	*)
+	    echo "Input format unacceptable"
+	    echo
+	    echo "		Acceptable input formats"
+	    echo "		1) rdf -- RDF/XML"
+	    echo "		2) ttl -- Turtle/N3"
+	    echo "		3) nt -- n-triple"
+	    echo "		4) nq -- n-quad"
+	    exit 1
+	;;
+	esac
+
+	${isql_cmd} ${isql_pwd} << EOF &> ${LOGFILE}
+	    $load_func
+	    checkpoint;
+	    exit;
+EOF
+	result=$?
+
+	# Remove temp file
+	rm $file_name_full
+
+	if [ $result != 0 ]
+	then
+	    "Failed to load! Check ${LOGFILE} for details."
+	    exit 1
+	fi
+
+	# Status message
+	echo "Loading finished! Check ${LOGFILE} for details."	
+	exit 0
+    fi
+fi
+

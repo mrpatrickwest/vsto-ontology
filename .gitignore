@@ -1,0 +1,6 @@
+schema.owl
+/logs/
+*.ttl
+*.json
+*.nt
+*.n3

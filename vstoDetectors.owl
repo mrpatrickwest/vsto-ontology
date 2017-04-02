@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY vsto "https://vsto.org/schema#">
+  <!ENTITY time "http://www.w3.org/2006/time#">
+]>
+<rdf:RDF
+    xmlns="&vsto;"
+    xmlns:vsto="&vsto;"
+    xmlns:time="&time;"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xml:base="&vsto;">
+
+<!-- START OF VSTO DETECTORS ONTOLOGY -->
+<!-- Detectors -->
+  <owl:Class rdf:about="ImagingDetector">
+    <rdfs:subClassOf rdf:resource="Detector"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Imaging Detector</rdfs:label>
+  </owl:Class>
+
+  <owl:Class rdf:ID="CCD">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCD Imaging Detector</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="ImagingDetector"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="Film">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Film</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ImagingDetector"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="Thermometer">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A device that measures temperature</rdfs:comment>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thermometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="Detector"/>
+  </owl:Class>
+
+<!-- Properties -->
+  <owl:FunctionalProperty rdf:ID="hasDimensions">
+    <rdfs:domain rdf:resource="Detector"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:FunctionalProperty>
+
+  <owl:FunctionalProperty rdf:ID="hasQuantumEfficiency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="Detector"/>
+  </owl:FunctionalProperty>
+
+  <owl:DatatypeProperty rdf:ID="hasPixelScale">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="Detector"/>
+  </owl:DatatypeProperty>
+
+</rdf:RDF>
+

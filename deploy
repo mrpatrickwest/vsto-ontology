@@ -1,0 +1,23 @@
+#!/bin/sh
+
+COMPILER=/data/apache-jena-3.2.0/bin/riot
+
+# merge the separate vsto owl files into schema.owl
+echo "merging VSTO ontology"
+./mergeme
+
+# convert the .owl files to different formats
+for i in schema.owl cedar.owl csac.owl mlso.owl
+do
+    echo "converting $i"
+    bas=`basename $i .owl`
+    $COMPILER --out=n3 ${i} > ${bas}.n3
+    $COMPILER --out=nt ${i} > ${bas}.nt
+    $COMPILER --out=ttl ${i} > ${bas}.ttl
+    $COMPILER --out=jsonld ${i} > ${bas}.json
+done
+
+# copy the ontologies to document root
+echo "copying"
+/bin/cp -f schema.* cedar.* csac.* mlso.* /var/www/html/
+

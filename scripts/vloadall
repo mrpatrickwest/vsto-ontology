@@ -1,0 +1,35 @@
+#!/bin/bash
+
+LOADER=/data/vsto/vsto-ontology/scripts/vload
+DELETER=/data/vsto/vsto-ontology/scripts/vdelete
+
+if [ $# -lt 2 ]; then
+    echo "Usage: vloadall [data_dir] [file_ext] [graph_uri]"
+    exit -1
+fi
+
+EXT=$2
+FILES=$1/*.$2
+GRAPH=$3
+    
+${DELETER} ${GRAPH}
+result=$?
+if [ ${result} != 0 ]
+then
+    exit ${status}
+fi
+
+result=0
+for f in $FILES
+do
+    echo "Loading ${f} as ${EXT} into graph ${GRAPH}..."
+    $LOADER ${EXT} ${f} ${GRAPH}
+    iresult=$?
+    if [ ${iresult} != 0 ]
+    then
+	result=1
+    fi
+done
+
+exit ${result}
+

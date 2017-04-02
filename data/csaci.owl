@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY vsto "https://vsto.org/schema#">
+  <!ENTITY csac "https://vsto.org/csac#">
+  <!ENTITY csaci "https://vsto.org/csac/individuals/">
+]>
+<rdf:RDF
+    xmlns="&csaci;"
+    xmlns:csac="&csac;"
+    xmlns:csaci="&csaci;"
+    xmlns:vsto="&vsto;"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:dc="http://purl.org/dc/terms/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xml:base="&csaci;">
+
+  <vsto:Observatory rdf:ID="csac_observatory_Hinode">
+    <dc:title>HINODE Satellite</dc:title>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >HINODE(SOLAR-B) is the third solar physics satellite of ISAS which was 
+    approved as a successor of the highly successful Japan/US/UK YOHKOH 
+    (SOLAR-A) collaboration. HINODE(SOLAR-B) satellite aboard the M-V Launch 
+    Vehicle No. 7 (M-V-7) has been launched at 6:36 a.m. on September 23, 2006 
+    (Japan Standard Time, JST) from the Uchinoura Space Center (USC). The 
+    SOLAR-B was given a nickname of &amp;quot;HINODE&amp;quot; (meaning a &amp;quot;sunrize.&amp;quot;).</rdfs:comment>
+    <rdfs:seeAlso xml:lang="en">
+							http://www.isas.ac.jp/e/enterp/missions/solar-b/
+						</rdfs:seeAlso>
+  </vsto:Observatory>
+  <vsto:JpgDataImage rdf:ID="csac_data_image">
+    <dc:title>CSAC Jpg Data Image</dc:title>
+    <dc:description>CSAC Jpg Data Image</dc:description>
+  </vsto:JpgDataImage>
+  <vsto:Observatory rdf:ID="csac_observatory_Sacramento_Peak">
+    <dc:title>Sacramento Peak Observatory</dc:title>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >National Science Foundation's Dunn Solar Telescope at Sunspot, NM</rdfs:comment>
+  </vsto:Observatory>
+  <vsto:SpectroPolarimeter rdf:ID="csac_instrument_SP4D">
+    <vsto:hasMeasuredParameter>
+      <vsto:DopplerWidth rdf:ID="csac_parameter_SP4D_SDOP">
+        <dc:identifier>SDOP</dc:identifier>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:title>SP4D Doppler Width</dc:title>
+        <dc:description>Doppler Velocity Line Width</dc:description>
+      </vsto:DopplerWidth>
+    </vsto:hasMeasuredParameter>
+    <dc:identifier>HINODE</dc:identifier>
+    <dc:description>4-D Stokes Polarimeter</dc:description>
+    <vsto:hasMeasuredParameter>
+      <vsto:SourceFunction rdf:ID="csac_parameter_SP4D_SBZERO">
+        <dc:description>Radiative transfer source function</dc:description>
+        <dc:identifier>SBZERO</dc:identifier>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:title>SP4D Source Function</dc:title>
+      </vsto:SourceFunction>
+    </vsto:hasMeasuredParameter>
+    <dc:title>SP4D</dc:title>
+    <vsto:hasMeasuredParameter>
+      <vsto:StokesParameterV rdf:ID="csac_parameter_SP4D_StokesV">
+        <dc:identifier>StokesV</dc:identifier>
+        <dc:description>Stokes v Polarization Parameter</dc:description>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:title>SP4D Stokes V</dc:title>
+      </vsto:StokesParameterV>
+    </vsto:hasMeasuredParameter>
+    <vsto:hasMeasuredParameter>
+      <vsto:StokesParameterQ rdf:ID="csac_parameter_SP4D_StokesQ">
+        <dc:identifier>StokesQ</dc:identifier>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:title>SP4D Stokes Q</dc:title>
+        <dc:description>Stokes Q Polarization Parameter</dc:description>
+      </vsto:StokesParameterQ>
+    </vsto:hasMeasuredParameter>
+    <vsto:hasMeasuredParameter>
+      <vsto:Polarization rdf:ID="csac_parameter_SP4D_SALPHA">
+        <dc:title>SP4D Polarization</dc:title>
+        <dc:identifier>SALPHA</dc:identifier>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:description>Net Polarization</dc:description>
+      </vsto:Polarization>
+    </vsto:hasMeasuredParameter>
+    <vsto:hasMeasuredParameter>
+      <vsto:ChiSquare rdf:ID="csac_parameter_SP4D_CHISQ">
+        <dc:title>SP4D Chi-Square</dc:title>
+        <dc:description>Chi-square goodness of fit</dc:description>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:identifier>CHISQ</dc:identifier>
+      </vsto:ChiSquare>
+    </vsto:hasMeasuredParameter>
+    <vsto:hasMeasuredParameter>
+      <vsto:ElevationAngle rdf:ID="csac_parameter_SP4D_SPSI">
+        <dc:title>SP4D Field Inclination</dc:title>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:description>Magnetic Field Inclination Angle</dc:description>
+        <dc:identifier>SPSI</dc:identifier>
+      </vsto:ElevationAngle>
+    </vsto:hasMeasuredParameter>
+    <vsto:hasMeasuredParameter>
+      <vsto:SourceFunctionGradient rdf:ID="csac_parameter_SP4D_SB1MU">
+        <dc:description>Radiative transfer source function gradient</dc:description>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:title>SP4D Source Function Gradient</dc:title>
+        <dc:identifier>SB1MU</dc:identifier>
+      </vsto:SourceFunctionGradient>
+    </vsto:hasMeasuredParameter>
+    <vsto:hasMeasuredParameter>
+      <vsto:StokesParameterU rdf:ID="csac_parameter_SP4D_StokesU">
+        <dc:title>SP4D Stokes U</dc:title>
+        <dc:description>Stokes U Polarization Parameter</dc:description>
+        <dc:identifier>StokesU</dc:identifier>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+      </vsto:StokesParameterU>
+    </vsto:hasMeasuredParameter>
+    <vsto:hasMeasuredParameter>
+      <vsto:MagneticField rdf:ID="csac_parameter_SP4D_SFLD">
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:title>SP4D Field Strength</dc:title>
+        <dc:identifier>SFLD</dc:identifier>
+        <dc:description>Magnetic Field Strength</dc:description>
+      </vsto:MagneticField>
+    </vsto:hasMeasuredParameter>
+    <vsto:hasMeasuredParameter>
+      <vsto:DampingParameter rdf:ID="csac_parameter_SP4D_SDMP">
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:identifier>SDMP</dc:identifier>
+        <dc:title>SP4D Damping Parameter</dc:title>
+        <dc:description>Line Damping Parameter</dc:description>
+      </vsto:DampingParameter>
+    </vsto:hasMeasuredParameter>
+    <vsto:hasMeasuredParameter>
+      <vsto:StokesParameterI rdf:ID="csac_parameter_SP4D_StokesI">
+        <dc:title>SP4D Stokes I</dc:title>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:description>Stokes I Polarization Parameter</dc:description>
+        <dc:identifier>StokesI</dc:identifier>
+      </vsto:StokesParameterI>
+    </vsto:hasMeasuredParameter>
+    <vsto:dataServedBy>
+      <vsto:DataArchive rdf:ID="csac_data_archive">
+        <dc:title>CSAC</dc:title>
+        <vsto:servesDataFor rdf:resource="#csac_instrument_SP4D"/>
+        <vsto:servesDataFor>
+          <vsto:SpectroPolarimeter rdf:ID="csac_instrument_DLSP">
+            <vsto:hasMeasuredParameter>
+              <vsto:ElevationAngle rdf:ID="csac_parameter_DLSP_SPSI">
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:title>DLSP Field Inclination</dc:title>
+                <dc:description>Magnetic Field Inclination Angle</dc:description>
+                <dc:identifier>SPSI</dc:identifier>
+              </vsto:ElevationAngle>
+            </vsto:hasMeasuredParameter>
+            <vsto:hasMeasuredParameter>
+              <vsto:DampingParameter rdf:ID="csac_parameter_DLSP_SDMP">
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:identifier>SDMP</dc:identifier>
+                <dc:description>Line Damping Parameter</dc:description>
+                <dc:title
+                >DLSP Damping Parameter</dc:title>
+              </vsto:DampingParameter>
+            </vsto:hasMeasuredParameter>
+            <vsto:hasMeasuredParameter>
+              <vsto:ChiSquare rdf:ID="csac_parameter_DLSP_CHISQ">
+                <dc:description>Chi-square goodness of fit</dc:description>
+                <dc:identifier>CHISQ</dc:identifier>
+                <dc:title
+                >DLSP Chi Square</dc:title>
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+              </vsto:ChiSquare>
+            </vsto:hasMeasuredParameter>
+            <vsto:hasMeasuredParameter>
+              <vsto:StokesParameterI rdf:ID="csac_parameter_DLSP_StokesI">
+                <dc:title
+                >DLSP Stokes I</dc:title>
+                <dc:identifier>StokesI</dc:identifier>
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:description>Stokes I Polarization Parameter</dc:description>
+              </vsto:StokesParameterI>
+            </vsto:hasMeasuredParameter>
+            <vsto:hasMeasuredParameter>
+              <vsto:Polarization rdf:ID="csac_parameter_DLSP_SALPHA">
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:title
+                >DLSP Polarization</dc:title>
+                <dc:description>Net Polarization</dc:description>
+                <dc:identifier>SALPHA</dc:identifier>
+              </vsto:Polarization>
+            </vsto:hasMeasuredParameter>
+            <vsto:dataServedBy rdf:resource="#csac_data_archive"/>
+            <dc:title
+            >DLSP</dc:title>
+            <dc:description>Diffraction-Limited Spectropolarimeter</dc:description>
+            <vsto:hasMeasuredParameter>
+              <vsto:AzimuthAngle rdf:ID="csac_parameter_DLSP_SAZM">
+                <dc:title
+                >DLSP Field Azimuth</dc:title>
+                <dc:identifier>SAZM</dc:identifier>
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:description>Magnetic Field Azimuth Angle</dc:description>
+              </vsto:AzimuthAngle>
+            </vsto:hasMeasuredParameter>
+            <vsto:hasMeasuredParameter>
+              <vsto:StokesParameterQ rdf:ID="csac_parameter_DLSP_StokesQ">
+                <dc:identifier>StokesQ</dc:identifier>
+                <dc:description>Stokes Q Polarization Parameter</dc:description>
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:title
+                >DLSP Stokes Q</dc:title>
+              </vsto:StokesParameterQ>
+            </vsto:hasMeasuredParameter>
+            <vsto:hasMeasuredParameter>
+              <vsto:StokesParameterU rdf:ID="csac_parameter_DLSP_StokesU">
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:identifier>StokesU</dc:identifier>
+                <dc:description>Stokes U Polarization Parameter</dc:description>
+                <dc:title
+                >DLSP Stokes U</dc:title>
+              </vsto:StokesParameterU>
+            </vsto:hasMeasuredParameter>
+            <vsto:hasMeasuredParameter>
+              <vsto:StokesParameterV rdf:ID="csac_parameter_DLSP_StokesV">
+                <dc:description>Stokes v Polarization Parameter</dc:description>
+                <dc:identifier>StokesV</dc:identifier>
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:title
+                >DLSP Stokes V</dc:title>
+              </vsto:StokesParameterV>
+            </vsto:hasMeasuredParameter>
+            <vsto:hasMeasuredParameter>
+              <vsto:MagneticField rdf:ID="csac_parameter_DLSP_SFLD">
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:identifier>SFLD</dc:identifier>
+                <dc:title
+                >DLSP Field Strength</dc:title>
+                <dc:description>Magnetic Field Strength</dc:description>
+              </vsto:MagneticField>
+            </vsto:hasMeasuredParameter>
+            <vsto:hasMeasuredParameter>
+              <vsto:DopplerWidth rdf:ID="csac_parameter_DLSP_SDOP">
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+                <dc:title
+                >DLSP Doppler Width</dc:title>
+                <dc:identifier>SDOP</dc:identifier>
+                <dc:description>Doppler Velocity Line Width</dc:description>
+              </vsto:DopplerWidth>
+            </vsto:hasMeasuredParameter>
+            <dc:identifier>DLSP</dc:identifier>
+            <vsto:hasMeasuredParameter>
+              <vsto:SourceFunction rdf:ID="csac_parameter_DLSP_SBZERO">
+                <dc:description>Radiative transfer source function</dc:description>
+                <dc:identifier>SBZERO</dc:identifier>
+                <dc:title
+                >DLSP Source Function</dc:title>
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+              </vsto:SourceFunction>
+            </vsto:hasMeasuredParameter>
+            <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Diffraction-Limited Spectropolarimeter (DLSP) is in operation at the  National Science Foundation's Dunn Solar Telescope at the Sacramento Peak  Observatory, Sunspot, NM, as a permanent, multi-user instrument for  studying the structure and life of sunspots.</rdfs:comment>
+            <vsto:hasMeasuredParameter>
+              <vsto:SourceFunctionGradient rdf:ID="csac_parameter_DLSP_SB1MU">
+                <dc:title
+                >DLSP Source Function Gradient</dc:title>
+                <dc:identifier>SB1MU</dc:identifier>
+                <dc:description>Radiative transfer source function gradient</dc:description>
+                <vsto:isMeasuredBy rdf:resource="#csac_instrument_DLSP"/>
+              </vsto:SourceFunctionGradient>
+            </vsto:hasMeasuredParameter>
+          </vsto:SpectroPolarimeter>
+        </vsto:servesDataFor>
+        <dc:description>Community Spectro-Polarimetric Analysis Center</dc:description>
+      </vsto:DataArchive>
+    </vsto:dataServedBy>
+    <vsto:hasMeasuredParameter>
+      <vsto:AzimuthAngle rdf:ID="csac_parameter_SP4D_SAZM">
+        <dc:description>Magnetic Field Azimuth Angle</dc:description>
+        <dc:identifier>SAZM</dc:identifier>
+        <vsto:isMeasuredBy rdf:resource="#csac_instrument_SP4D"/>
+        <dc:title
+        >SP4D Field Azimuth</dc:title>
+      </vsto:AzimuthAngle>
+    </vsto:hasMeasuredParameter>
+  </vsto:SpectroPolarimeter>
+
+</rdf:RDF>
+
